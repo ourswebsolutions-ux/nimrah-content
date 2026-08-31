@@ -21,11 +21,11 @@ import { ExternalLink } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Fatima Zaheer's Portfolio | Professional Content Writing",
+  title: "Alina Fatima 's Portfolio | Professional Content Writing",
   description:
-    "Explore Fatima Zaheer's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
+    "Explore Alina Fatima 's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
   keywords: [
-    "Fatima Zaheer portfolio",
+    "Alina Fatima  portfolio",
     "content writing portfolio",
     "SEO content writer",
     "professional content writer",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     "copywriting portfolio",
     "digital content writer",
   ],
-  authors: [{ name: "Fatima Zaheer" }],
+  authors: [{ name: "Alina Fatima " }],
   openGraph: {
-    title: "Fatima Zaheer's Portfolio | Professional Content Writing",
+    title: "Alina Fatima 's Portfolio | Professional Content Writing",
     description:
       "A selection of professional content writing projects including website copy, SEO content, scripts, social media campaigns, email marketing, and product content.",
     type: "website",
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
         url: "/worldwideartical.jpg",
         width: 1200,
         height: 630,
-        alt: "Fatima Zaheer Content Writing Portfolio",
+        alt: "Alina Fatima  Content Writing Portfolio",
       },
     ],
-    siteName: "Fatima Zaheer Portfolio",
+    siteName: "Alina Fatima  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fatima Zaheer's Portfolio | Content Writing",
+    title: "Alina Fatima 's Portfolio | Content Writing",
     description:
       "Explore professional content writing, SEO copywriting, scripts, campaigns, product content, and website copy.",
     images: ["/worldwideartical.jpg"],
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CreativeWork",
-      name: "Fatima Zaheer's Content Writing Portfolio",
+      name: "Alina Fatima 's Content Writing Portfolio",
       author: {
         "@type": "Person",
-        name: "Fatima Zaheer",
+        name: "Alina Fatima ",
       },
       url: "https://storycup.vercel.app/portfolio",
       description:
@@ -98,9 +98,104 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
+    title: "The Art of Not Thinking",
+    description:
+      "A reflective and engaging article exploring the importance of slowing down, reducing overthinking, and developing a healthier relationship with thoughts and everyday life.",
+    image:
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    category: "Article Writing",
+    technologies: [
+      "Content Writing",
+      "Research",
+      "Storytelling",
+      "Medium",
+    ],
+    liveUrl:
+      "https://medium.com/@onecup.oftea/the-art-of-not-thinking-c345efd4fa5c",
+    featured: true,
+  },
+
+  {
+    id: 2,
+    title: "5 Daily Habits for Language Fluency",
+    description:
+      "Created a practical and reader-friendly article sharing five daily habits that can help learners improve language fluency, consistency, vocabulary, and communication skills.",
+    image:
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+    category: "Educational Content",
+    technologies: [
+      "Blog Writing",
+      "Educational Writing",
+      "Research",
+      "SEO Content",
+    ],
+    liveUrl:
+      "https://medium.com/no-time/want-to-speak-any-language-fluently-start-these-5-daily-habits-cd2cec7e9d1f",
+    featured: true,
+  },
+
+  {
+    id: 3,
+    title: "30-Day 4:30 AM Experiment",
+    description:
+      "A long-form personal development article documenting the experience of waking up at 4:30 AM for 30 days, with practical insights, challenges, observations, and lessons learned.",
+    image:
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+    category: "Lifestyle Writing",
+    technologies: [
+      "Long-Form Writing",
+      "Storytelling",
+      "Research",
+      "Medium",
+    ],
+    liveUrl:
+      "https://medium.com/@reshmadudhat29/i-woke-up-at-4-30-am-for-30-days-the-truth-nobody-tells-you-b704f0f86c3b",
+    featured: true,
+  },
+
+  {
+    id: 4,
+    title: "Faith, Love & Identity in Adulthood",
+    description:
+      "An honest and thoughtful piece discussing the complexities of faith, love, identity, and personal growth during adulthood while connecting with readers through relatable storytelling.",
+    image:
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
+    category: "Feature Writing",
+    technologies: [
+      "Article Writing",
+      "Storytelling",
+      "Research",
+      "Editorial Content",
+    ],
+    liveUrl:
+      "https://educationbeing.com/talking-about-the-hard-things-faith-love-and-identity-in-adulthood-honest-review/",
+    featured: true,
+  },
+
+  {
+    id: 5,
+    title: "Replacement Diplomas & College Degrees",
+    description:
+      "Developed detailed informational content covering replacement diplomas and college degrees, structured to provide clear information while maintaining an engaging and easy-to-read format.",
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    category: "Informational Content",
+    technologies: [
+      "SEO Writing",
+      "Research",
+      "Web Content",
+      "Informational Writing",
+    ],
+    liveUrl:
+      "https://educationbeing.com/buy-fast-and-realistic-looking-replacement-diplomas-and-college-degrees/",
+    featured: false,
+  },
+
+  {
+    id: 6,
     title: "SEO Website Content",
     description:
-      "Developed search-engine-friendly website content designed to communicate brand value clearly while targeting relevant keywords and improving organic visibility.",
+      "Created search-engine-friendly website content focused on clear communication, keyword relevance, user engagement, and improving organic search visibility.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
     category: "Website Content",
@@ -108,124 +203,51 @@ const projects = [
       "SEO Writing",
       "Keyword Research",
       "Website Copy",
+      "On-Page SEO",
     ],
-    liveUrl: "https://www.centricdxb.com/insights/b2b-sales-funnel",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "YouTube Biography Script",
-    description:
-      "Created an engaging long-form biography script structured for YouTube storytelling, audience retention, and clear presentation of a subject's life and achievements.",
-    image:
-      "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1200&q=80",
-    category: "Scripts",
-    technologies: [
-      "YouTube Writing",
-      "Storytelling",
-      "Research",
-    ],
-    liveUrl: "https://rondasomontano.com/revista/188782/herramientas-de-ia-amigables-para-los-estudiantes-la-clave-de-la-excelencia-academica/",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "LinkedIn Personal Branding",
-    description:
-      "Developed professional LinkedIn content focused on personal branding, thought leadership, audience engagement, and building a consistent professional voice.",
-    image:
-      "https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&w=1200&q=80",
-    category: "Social Media",
-    technologies: [
-      "LinkedIn Content",
-      "Personal Branding",
-      "Copywriting",
-    ],
-    liveUrl: "https://www.goinformation.info/7425/reformulation-du-texte-peut-elle-aider-les-etudiants-a-ameliorer-capacites-redactionnelles/",
-    featured: true,
-  },
-  {
-    id: 4,
-    title: "E-Commerce Product Descriptions",
-    description:
-      "Created persuasive product descriptions that highlight key features, customer benefits, and buying points while maintaining a clear and conversion-focused tone.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
-    category: "E-Commerce",
-    technologies: [
-      "Product Copy",
-      "Conversion Writing",
-      "SEO",
-    ],
-    liveUrl: "https://tecnowiz.net/come-riassumere-un-articolo-senza-plagiarlo/",
+    liveUrl:
+      "https://www.bankingsupport.info/",
     featured: false,
   },
-  {
-    id: 5,
-    title: "Email Marketing Campaign",
-    description:
-      "Planned and wrote customer-focused email copy designed to capture attention, communicate value, encourage clicks, and support marketing campaign goals.",
-    image:
-      "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&w=1200&q=80",
-    category: "Email Marketing",
-    technologies: [
-      "Email Copywriting",
-      "Marketing",
-      "CTA Writing",
-    ],
-    liveUrl: "https://zipboard.co/blog/uncategorized/the-role-of-ai-paraphrasing-tools-in-content-creation/",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Professional Press Release",
-    description:
-      "Produced structured press release content with strong headlines, clear messaging, news-focused writing, and publication-ready formatting.",
-    image:
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
-    category: "Press Releases",
-    technologies: [
-      "PR Writing",
-      "News Writing",
-      "Media Content",
-    ],
-    liveUrl: "https://www.bankingsupport.info/",
-    featured: false,
-  },
+
   {
     id: 7,
-    title: "Real Estate Marketing Copy",
+    title: "SEO Article & Guest Posting Content",
     description:
-      "Created engaging real estate marketing copy for property listings, landing pages, and promotional campaigns focused on attracting qualified buyers.",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
-    category: "Real Estate",
-    technologies: [
-      "Real Estate Copy",
-      "SEO",
-      "Marketing Content",
-    ],
-    liveUrl: "https://jornaldobairroalto.com.br/",
-    featured: false,
-  },
-  {
-    id: 8,
-    title: "Technical Documentation",
-    description:
-      "Created easy-to-understand technical documentation, user guides, and structured help content to make complex information easier for users to follow.",
+      "Produced quality SEO-focused articles designed for guest posting and off-page SEO campaigns, with an emphasis on relevance, readability, keyword placement, and link-building objectives.",
     image:
       "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
-    category: "Documentation",
+    category: "Guest Posting",
     technologies: [
-      "Technical Writing",
-      "Documentation",
-      "User Guides",
+      "Guest Posting",
+      "SEO Writing",
+      "Link Building",
+      "Article Writing",
     ],
-    liveUrl: "https://jornaljoseensenews.com.br/",
+    liveUrl:
+      "https://jornaldobairroalto.com.br/",
+    featured: false,
+  },
+
+  {
+    id: 8,
+    title: "Professional SEO Content & Outreach",
+    description:
+      "Developed optimized written content and supported outreach-focused campaigns with attention to search visibility, content quality, relevance, and authority-building strategies.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Outreach",
+    technologies: [
+      "SEO",
+      "Content Writing",
+      "Outreach",
+      "Link Building",
+    ],
+    liveUrl:
+      "https://jornaljoseensenews.com.br/",
     featured: false,
   },
 ]
-
 export default function PortfolioPage() {
   const categories = [
     "All",

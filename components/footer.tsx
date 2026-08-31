@@ -12,7 +12,7 @@ export function Footer() {
             <div className="flex items-center">
   <img
     src="/logo.png"
-    alt="Fatima Zaheer  Logo"
+    alt="Alina Fatima   Logo"
     className="h-auto w-[150px] max-w-full object-contain sm:w-[200px] md:w-[220px] lg:w-[240px]"
   />
 </div>
@@ -25,7 +25,7 @@ export function Footer() {
                 </Link>
               </Button> */}
               <Button size="icon" variant="ghost" asChild>
-                <Link href="https://www.linkedin.com/in/fatima-zaheer-contentwriter" target="_blank">
+                <Link href="https://www.linkedin.com/in/alina-rajput-552a9a405" target="_blank">
                   <Linkedin className="h-4 w-4" />
                 </Link>
               </Button>
@@ -35,7 +35,7 @@ export function Footer() {
                 </Link>
               </Button>
               <Button size="icon" variant="ghost" asChild>
-                <Link href="mailto: fatimasheikhnew@gmail.com ">
+                <Link href="mailto: alinarajput458@gmail.com  ">
                   <Mail className="h-4 w-4" />
                 </Link>
               </Button>
@@ -94,20 +94,20 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li>
-                <span className="text-muted-foreground"> fatimasheikhnew@gmail.com </span>
+                <span className="text-muted-foreground"> alinarajput458@gmail.com  </span>
               </li>
               <li>
-                <span className="text-muted-foreground">+92 3706287765</span>
+                <span className="text-muted-foreground">+92 3265525303</span>
               </li>
               <li>
-                <span className="text-muted-foreground">Faisalabad, Punjab , Pakistan </span>
+                <span className="text-muted-foreground">Okara, Punjab , Pakistan </span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Fatima Zaheer . All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Alina Fatima  . All rights reserved.</p>
         </div>
       </div>
     </footer>

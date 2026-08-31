@@ -7,9 +7,9 @@ import { Footer } from "@/components/footer"
 import { CheckCircle, FileText, PenLine, Search, Newspaper, MessageCircle } from "lucide-react"
 import { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Fatima Zaheer 's Services - Best Content Writing & SEO Copywriting",
+  title: "Alina Fatima  's Services - Best Content Writing & SEO Copywriting",
   description:
-    "HireFatima Zaheer for top content writing services in Pakistan, including SEO content, blog writing, and copywriting to elevate your brand.",
+    "HireAlina Fatima  for top content writing services in Pakistan, including SEO content, blog writing, and copywriting to elevate your brand.",
   keywords: [
     "best content writing services",
     "content writing services in Pakistan",
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     "professional content writing services",
     "content writer Karachi",
   ],
-  authors: [{ name: "Fatima Zaheer " }],
+  authors: [{ name: "Alina Fatima  " }],
   openGraph: {
-    title: "Fatima Zaheer 's Services - Best Content Writing & SEO in Pakistan",
+    title: "Alina Fatima  's Services - Best Content Writing & SEO in Pakistan",
     description:
-      "Fatima Zaheer offers expert content writing services in Pakistan, including SEO content, blog writing, and copywriting for businesses worldwide.",
+      "Alina Fatima  offers expert content writing services in Pakistan, including SEO content, blog writing, and copywriting for businesses worldwide.",
     type: "website",
     url: "https://storycup.vercel.app/services", // Replace with your actual Services page URL
     images: [
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
         url: "/services-og-image.jpg", // Replace with a relevant image for the Services page
         width: 1200,
         height: 630,
-        alt: "Fatima Zaheer Best Content Writing Services",
+        alt: "Alina Fatima  Best Content Writing Services",
       },
     ],
-    siteName: "Fatima Zaheer Portfolio",
+    siteName: "Alina Fatima  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fatima Zaheer 's Services - Best Content Writing & SEO",
+    title: "Alina Fatima  's Services - Best Content Writing & SEO",
     description:
-      "HireFatima Zaheer for professional content writing, SEO content, and blog writing services in Pakistan and beyond.",
+      "HireAlina Fatima  for professional content writing, SEO content, and blog writing services in Pakistan and beyond.",
     images: ["/services-og-image.jpg"], // Replace with your actual image
   },
   alternates: {
@@ -67,15 +67,15 @@ export const metadata: Metadata = {
       serviceType: "Content Writing",
       provider: {
         "@type": "Person",
-        name: "Fatima Zaheer ",
+        name: "Alina Fatima  ",
       },
       url: "https://storycup.vercel.app/services", // Replace with your actual Services page URL
       sameAs: [
-        "https://www.linkedin.com/in/Fatima Zaheer ", // Replace with your actual LinkedIn
-        "https://twitter.com/Fatima Zaheer ", // Replace with your actual Twitter
+        "https://www.linkedin.com/in/Alina Fatima  ", // Replace with your actual LinkedIn
+        "https://twitter.com/Alina Fatima  ", // Replace with your actual Twitter
       ],
       description:
-        "Fatima Zaheer provides top content writing services in Pakistan, specializing in SEO content, blog writing, article writing, and copywriting for businesses globally.",
+        "Alina Fatima  provides top content writing services in Pakistan, specializing in SEO content, blog writing, article writing, and copywriting for businesses globally.",
       areaServed: [
         "Pakistan",
         "Karachi",

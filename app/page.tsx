@@ -18,12 +18,12 @@ import { Footer } from "@/components/footer";
 
 export default function HomePage() {
   const handleDownloadResume = async () => {
-  const response = await fetch('/Fatima_Zaheer_Professional_CV.pdf')
+  const response = await fetch('/Alina-Resume.pdf')
   const blob = await response.blob();
 
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.setAttribute('download', 'Fatima_Zaheer_Professional_CV.pdf');                       
+  link.setAttribute('download', 'Alina-Resume.pdf');                       
   link.style.display = 'none';
   document.body.appendChild(link);
   link.click(); // 👈 triggers instant download
@@ -46,7 +46,7 @@ export default function HomePage() {
                   Available for freelance writing projects
                 </Badge>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight break-words">
-                  Hi, I'm <span className="text-blue-600">Fatima Zaheer </span>
+                  Hi, I'm <span className="text-blue-600">Alina Fatima  </span>
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
                   Creative Content Writer & Copywriter
@@ -84,12 +84,12 @@ export default function HomePage() {
                   </Link>
                 </Button>
                 <Button size="icon" variant="ghost" asChild>
-                  <Link href="https://www.linkedin.com/in/fatima-zaheer-contentwriter" target="_blank">
+                  <Link href="https://www.linkedin.com/in/alina-rajput-552a9a405" target="_blank">
                     <Linkedin className="h-5 w-5" />
                   </Link>
                 </Button>
                 <Button size="icon" variant="ghost" asChild>
-                  <Link href="mailto: fatimasheikhnew@gmail.com ">
+                  <Link href="mailto: alinarajput458@gmail.com  ">
                     <Mail className="h-5 w-5" />
                   </Link>
                 </Button>

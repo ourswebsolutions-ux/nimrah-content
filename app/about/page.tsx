@@ -1,6 +1,5 @@
 
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
@@ -11,32 +10,32 @@ import type { Metadata } from "next"
 import { DownloadResumeButton } from "@/components/DownloadResumeButton"
 
 export const metadata: Metadata = {
-  title: "About Fatima Zaheer | SEO Content Writer & Copywriter",
+  title: "About Alina Rajput | SEO & Content Writing Specialist",
   description:
-    "Learn about Fatima Zaheer, an SEO Content Writer, Copywriter, and Script Writer with 5+ years of experience in SEO content, website writing, scripts, landing pages, product descriptions, and marketing copy.",
+    "Learn about Alina Rajput, an SEO & Content Writing Specialist from Okara, Pakistan with 2-3 years of freelance experience in SEO content writing, guest posting, outreach, and link building.",
   keywords: [
-    "Fatima Zaheer",
+    "Alina Rajput",
     "SEO Content Writer",
-    "Copywriter",
-    "Script Writer",
+    "SEO Specialist",
+    "Content Writer",
+    "Content Writing Specialist",
+    "SEO writer Pakistan",
     "content writer Pakistan",
-    "SEO content writer Pakistan",
-    "freelance content writer",
-    "SEO copywriter",
+    "freelance SEO writer",
+    "guest posting",
+    "link building",
+    "SEO content writing",
+    "off-page SEO",
+    "on-page SEO",
     "blog writer",
     "website content writer",
-    "script writer",
-    "product description writer",
-    "content strategist",
-    "keyword research",
-    "WordPress content writer",
-    "AI content writer",
+    "SEO outreach",
   ],
-  authors: [{ name: "Fatima Zaheer" }],
+  authors: [{ name: "Alina Rajput" }],
   openGraph: {
-    title: "About Fatima Zaheer | SEO Content Writer & Copywriter",
+    title: "About Alina Rajput | SEO & Content Writing Specialist",
     description:
-      "Discover Fatima Zaheer's professional journey, skills, education, certifications, and experience as an SEO Content Writer, Copywriter, and Script Writer.",
+      "Discover Alina Rajput's professional experience, SEO skills, content writing expertise, education, and published work.",
     type: "website",
     url: "https://storycup.vercel.app/about",
     images: [
@@ -44,16 +43,16 @@ export const metadata: Metadata = {
         url: "/about-dp.jpeg",
         width: 1200,
         height: 630,
-        alt: "Fatima Zaheer - SEO Content Writer & Copywriter",
+        alt: "Alina Rajput - SEO & Content Writing Specialist",
       },
     ],
-    siteName: "Fatima Zaheer Portfolio",
+    siteName: "Alina Rajput Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Fatima Zaheer | SEO Content Writer",
+    title: "About Alina Rajput | SEO & Content Writing Specialist",
     description:
-      "Learn about Fatima Zaheer's experience in SEO content writing, copywriting, script writing, and content strategy.",
+      "Learn about Alina Rajput's experience in SEO content writing, guest posting, outreach, and link building.",
     images: ["/about-dp.jpeg"],
   },
   alternates: {
@@ -74,15 +73,15 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Fatima Zaheer",
-      jobTitle: "SEO Content Writer | Copywriter | Script Writer",
+      name: "Alina Rajput",
+      jobTitle: "SEO & Content Writing Specialist",
       url: "https://storycup.vercel.app/about",
-      email: "fz802335@gmail.com",
-      telephone: "+92 370 628 7765",
+      email: "alinarajput458@gmail.com",
+      telephone: "+92 326 552 5303",
       description:
-        "Fatima Zaheer is an SEO Content Writer, Copywriter, and Script Writer with 5+ years of experience creating SEO-optimized blogs, website content, scripts, landing pages, product descriptions, and marketing copy.",
+        "Alina Rajput is an SEO and content professional from Okara, Pakistan with 2-3 years of freelance experience in SEO content writing, guest posting, outreach, and link building.",
       sameAs: [
-        "https://www.linkedin.com/",
+        "https://www.linkedin.com/in/mahnoor-siddiqui-4725352a4/",
       ],
     }),
   },
@@ -100,7 +99,7 @@ export default function AboutPage() {
           <div className="relative w-32 h-32 mx-auto mb-6">
             <Image
               src="/about-dp.jpeg"
-              alt="Fatima Zaheer"
+              alt="Alina Rajput"
               fill
               className="rounded-full border-4 border-primary/20 object-cover"
             />
@@ -111,7 +110,12 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I’m Fatima Zaheer, a content writer with 5 years of experience creating engaging, well-researched, and SEO-focused content for businesses across various industries. My expertise includes blog and article writing, website and landing page content, product descriptions, copywriting, guest posts, marketing content, AI-assisted content creation, editing, and proofreading. I focus on creating valuable, audience-focused content that builds brand credibility, engages readers, and supports business growth.
+            I’m Alina Rajput, an SEO & Content Writing Specialist from Okara,
+            Pakistan with 2-3 years of freelance experience. I specialize in
+            creating SEO-friendly blogs and website content, guest posting,
+            outreach, and quality link building. My goal is to create
+            valuable, engaging content while helping businesses improve their
+            online visibility, search rankings, and digital presence.
           </p>
 
           <DownloadResumeButton />
@@ -133,9 +137,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Content Writer</CardTitle>
+                    <CardTitle>Freelance SEO & Content Writer</CardTitle>
                     <p className="text-muted-foreground">
-                      Hashtag Ventures • Jan 2025 - Present
+                      Freelance • 2-3 Years
                     </p>
                   </div>
                 </div>
@@ -143,141 +147,17 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Write SEO-friendly blogs and web content, develop marketing
-                  copy and landing pages, and collaborate with designers and
-                  marketers to create effective digital content.
+                  Create SEO-optimized content for websites and blogs across
+                  multiple niches. Develop engaging and well-researched
+                  articles while maintaining quality, relevance, and
+                  search-engine-friendly structure.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">SEO Writing</Badge>
-                  <Badge variant="secondary">Web Content</Badge>
-                  <Badge variant="secondary">Landing Pages</Badge>
-                  <Badge variant="secondary">Marketing Copy</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Briefcase className="h-6 w-6 text-blue" />
-                  </div>
-
-                  <div>
-                    <CardTitle>Content Writer</CardTitle>
-                    <p className="text-muted-foreground">
-                      Softrix Technologies • 2023 - 2024
-                    </p>
-                  </div>
-                </div>
-              </CardHeader>
-
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Produced off-page SEO content and managed multiple client
-                  writing projects remotely while maintaining quality,
-                  consistency, and project deadlines.
-                </p>
-
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Off-Page SEO</Badge>
-                  <Badge variant="secondary">Article Writing</Badge>
-                  <Badge variant="secondary">Client Projects</Badge>
-                  <Badge variant="secondary">Remote Work</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Briefcase className="h-6 w-6 text-blue" />
-                  </div>
-
-                  <div>
-                    <CardTitle>Script Writer</CardTitle>
-                    <p className="text-muted-foreground">
-                      Enzipe • 2023 - 2024
-                    </p>
-                  </div>
-                </div>
-              </CardHeader>
-
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Created promotional and video scripts designed to communicate
-                  ideas clearly, maintain audience interest, and support
-                  marketing campaigns.
-                </p>
-
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Script Writing</Badge>
-                  <Badge variant="secondary">Video Scripts</Badge>
-                  <Badge variant="secondary">Promotional Content</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Briefcase className="h-6 w-6 text-blue" />
-                  </div>
-
-                  <div>
-                    <CardTitle>Script Writer</CardTitle>
-                    <p className="text-muted-foreground">
-                      Funnel X • 2023 - 2024
-                    </p>
-                  </div>
-                </div>
-              </CardHeader>
-
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Developed engaging scripts for campaigns with a focus on
-                  compelling storytelling, audience engagement, and effective
-                  marketing communication.
-                </p>
-
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Campaign Scripts</Badge>
-                  <Badge variant="secondary">Storytelling</Badge>
-                  <Badge variant="secondary">Marketing</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Briefcase className="h-6 w-6 text-blue" />
-                  </div>
-
-                  <div>
-                    <CardTitle>Content Writer</CardTitle>
-                    <p className="text-muted-foreground">
-                      Al Fajar Tech Solutions • 2021 - 2023
-                    </p>
-                  </div>
-                </div>
-              </CardHeader>
-
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Created blogs, website content, and marketing copy for
-                  businesses, helping brands communicate their services and
-                  ideas through clear and engaging written content.
-                </p>
-
-                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary">SEO Content Writing</Badge>
                   <Badge variant="secondary">Blog Writing</Badge>
                   <Badge variant="secondary">Website Content</Badge>
-                  <Badge variant="secondary">Marketing Copy</Badge>
+                  <Badge variant="secondary">SEO Copywriting</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -290,9 +170,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Copywriter</CardTitle>
+                    <CardTitle>Guest Posting & Outreach Specialist</CardTitle>
                     <p className="text-muted-foreground">
-                      Buzzfic Advertisement • 2023 - 2024
+                      Freelance • 2-3 Years
                     </p>
                   </div>
                 </div>
@@ -300,15 +180,50 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Produced persuasive advertising copy focused on clear
-                  messaging, audience engagement, and stronger communication
-                  for promotional campaigns.
+                  Manage guest posting placements and outreach for client
+                  websites by identifying relevant publishing opportunities,
+                  communicating with website owners, and maintaining quality
+                  placements.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Copywriting</Badge>
-                  <Badge variant="secondary">Advertising</Badge>
-                  <Badge variant="secondary">Persuasive Writing</Badge>
+                  <Badge variant="secondary">Guest Posting</Badge>
+                  <Badge variant="secondary">Outreach</Badge>
+                  <Badge variant="secondary">Website Research</Badge>
+                  <Badge variant="secondary">Client Management</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Briefcase className="h-6 w-6 text-blue" />
+                  </div>
+
+                  <div>
+                    <CardTitle>Link Building Specialist</CardTitle>
+                    <p className="text-muted-foreground">
+                      Freelance • 2-3 Years
+                    </p>
+                  </div>
+                </div>
+              </CardHeader>
+
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Plan and execute link building campaigns focused on
+                  relevance and authority. Research suitable websites and
+                  maintain a portfolio of websites available for guest posting
+                  and link placement opportunities.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary">Link Building</Badge>
+                  <Badge variant="secondary">Off-Page SEO</Badge>
+                  <Badge variant="secondary">Backlink Research</Badge>
+                  <Badge variant="secondary">Website Authority</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -344,15 +259,15 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Copywriting</span>
-                    <span>92%</span>
+                    <span>Blog & Article Writing</span>
+                    <span>94%</span>
                   </div>
-                  <Progress value={92} />
+                  <Progress value={94} />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Script Writing</span>
+                    <span>Website Content</span>
                     <span>90%</span>
                   </div>
                   <Progress value={90} />
@@ -373,14 +288,6 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Keyword Research</span>
-                    <span>92%</span>
-                  </div>
-                  <Progress value={92} />
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-2">
                     <span>On-Page SEO</span>
                     <span>90%</span>
                   </div>
@@ -389,10 +296,18 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Content Strategy</span>
-                    <span>88%</span>
+                    <span>Off-Page SEO</span>
+                    <span>92%</span>
                   </div>
-                  <Progress value={88} />
+                  <Progress value={92} />
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>SEO Research</span>
+                    <span>90%</span>
+                  </div>
+                  <Progress value={90} />
                 </div>
 
               </CardContent>
@@ -402,7 +317,7 @@ export default function AboutPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Tools & Skills
+                  Outreach & Link Building
                 </CardTitle>
               </CardHeader>
 
@@ -410,15 +325,15 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>WordPress</span>
-                    <span>90%</span>
+                    <span>Guest Posting</span>
+                    <span>95%</span>
                   </div>
-                  <Progress value={90} />
+                  <Progress value={95} />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Proofreading</span>
+                    <span>Outreach</span>
                     <span>92%</span>
                   </div>
                   <Progress value={92} />
@@ -426,10 +341,10 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>AI-assisted Content</span>
-                    <span>90%</span>
+                    <span>Link Building</span>
+                    <span>94%</span>
                   </div>
-                  <Progress value={90} />
+                  <Progress value={94} />
                 </div>
 
               </CardContent>
@@ -454,9 +369,11 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>BS Computer Science</CardTitle>
+                    <CardTitle>
+                      Bachelor of Information Technology
+                    </CardTitle>
                     <p className="text-muted-foreground">
-                      Government College University Faisalabad • 2017 - 2021
+                      BIT • In Progress
                     </p>
                   </div>
                 </div>
@@ -464,9 +381,9 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Bachelor's degree in Computer Science, providing a strong
-                  foundation in technology, research, analytical thinking,
-                  communication, and digital concepts.
+                  Currently pursuing a Bachelor of Information Technology,
+                  developing a strong foundation in technology, digital
+                  concepts, research, analytical thinking, and communication.
                 </p>
               </CardContent>
             </Card>
@@ -479,9 +396,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Diploma in Search Engine Optimization</CardTitle>
+                    <CardTitle>SEO & Content Writing Experience</CardTitle>
                     <p className="text-muted-foreground">
-                      I-Skills Faisalabad • 2024
+                      Freelance Professional Experience
                     </p>
                   </div>
                 </div>
@@ -489,9 +406,9 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Professional SEO training covering search optimization,
-                  keyword research, content optimization, and SEO-focused
-                  digital content practices.
+                  Practical experience in SEO content writing, guest posting,
+                  outreach, link building, and creating content designed to
+                  support online visibility and business growth.
                 </p>
               </CardContent>
             </Card>
@@ -502,7 +419,7 @@ export default function AboutPage() {
         {/* Awards */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Awards & Recognition
+            Published Work Samples
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -515,9 +432,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Best Content Writer</CardTitle>
+                    <CardTitle>The Art of Not Thinking</CardTitle>
                     <p className="text-muted-foreground">
-                      Web Tech Solution
+                      Medium
                     </p>
                   </div>
                 </div>
@@ -525,9 +442,14 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Recognized for excellence in professional content writing
-                  and delivering quality written content.
+                  Published writing sample demonstrating engaging,
+                  reader-focused storytelling and thoughtful content.
                 </p>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary">Medium</Badge>
+                  <Badge variant="secondary">Article Writing</Badge>
+                </div>
               </CardContent>
             </Card>
 
@@ -539,9 +461,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Best Freelance Article Writer</CardTitle>
+                    <CardTitle>5 Daily Habits for Language Fluency</CardTitle>
                     <p className="text-muted-foreground">
-                      Technogenis Faisalabad
+                      Medium
                     </p>
                   </div>
                 </div>
@@ -549,9 +471,74 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Recognized for high-quality freelance article writing and
-                  professional content delivery.
+                  Published article focused on practical habits for improving
+                  language fluency and maintaining reader engagement.
                 </p>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary">Medium</Badge>
+                  <Badge variant="secondary">Content Writing</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Award className="h-6 w-6 text-blue" />
+                  </div>
+
+                  <div>
+                    <CardTitle>30-Day 4:30 AM Experiment</CardTitle>
+                    <p className="text-muted-foreground">
+                      Medium
+                    </p>
+                  </div>
+                </div>
+              </CardHeader>
+
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Published lifestyle and experience-based content written to
+                  create curiosity, engagement, and a strong connection with
+                  readers.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary">Medium</Badge>
+                  <Badge variant="secondary">Lifestyle Writing</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Award className="h-6 w-6 text-blue" />
+                  </div>
+
+                  <div>
+                    <CardTitle>Faith, Love & Identity in Adulthood</CardTitle>
+                    <p className="text-muted-foreground">
+                      Education Being
+                    </p>
+                  </div>
+                </div>
+              </CardHeader>
+
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Published feature exploring personal identity, relationships,
+                  faith, and adulthood through an honest and engaging writing
+                  style.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <Badge variant="secondary">Education Being</Badge>
+                  <Badge variant="secondary">Feature Writing</Badge>
+                </div>
               </CardContent>
             </Card>
 
@@ -561,7 +548,7 @@ export default function AboutPage() {
         {/* Selected Projects */}
         <section>
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Selected Projects
+            Selected Work
           </h2>
 
           <Card>
@@ -570,10 +557,11 @@ export default function AboutPage() {
               <div className="flex flex-wrap justify-center gap-3">
 
                 {[
-                  "fajri.com",
-                  "menzclinic.com",
-                  "orlandohairrestoration.com",
-                  "trackmypackage.net",
+                  "The Art of Not Thinking",
+                  "5 Daily Habits for Language Fluency",
+                  "30-Day 4:30 AM Experiment",
+                  "Faith, Love & Identity in Adulthood",
+                  "Replacement Diplomas & College Degrees",
                 ].map((project) => (
                   <Badge
                     key={project}

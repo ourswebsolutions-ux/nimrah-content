@@ -10,11 +10,11 @@ import { Calendar, Clock, Search, ArrowRight } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Fatima Zaheer's Blog | Content Writing, AI & SEO Insights",
+  title: "Alina Fatima 's Blog | Content Writing, AI & SEO Insights",
   description:
-    "Explore Fatima Zaheer's blog for practical insights on content writing, AI tools, paraphrasing, academic writing, copywriting, and SEO content.",
+    "Explore Alina Fatima 's blog for practical insights on content writing, AI tools, paraphrasing, academic writing, copywriting, and SEO content.",
   keywords: [
-    "Fatima Zaheer blog",
+    "Alina Fatima  blog",
     "content writing",
     "content writing tips",
     "SEO content writing",
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     "AI writing tools",
     "content creation",
   ],
-  authors: [{ name: "Fatima Zaheer" }],
+  authors: [{ name: "Alina Fatima " }],
   openGraph: {
-    title: "Fatima Zaheer's Blog | Content Writing, AI & SEO Insights",
+    title: "Alina Fatima 's Blog | Content Writing, AI & SEO Insights",
     description:
-      "Read Fatima Zaheer's latest articles covering content writing, AI-powered writing tools, academic writing, paraphrasing, and copywriting.",
+      "Read Alina Fatima 's latest articles covering content writing, AI-powered writing tools, academic writing, paraphrasing, and copywriting.",
     type: "website",
     url: "https://storycup.vercel.app/blog",
     images: [
@@ -42,16 +42,16 @@ export const metadata: Metadata = {
         url: "/blog-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Fatima Zaheer Blog - Content Writing and AI Insights",
+        alt: "Alina Fatima  Blog - Content Writing and AI Insights",
       },
     ],
-    siteName: "Fatima Zaheer Portfolio",
+    siteName: "Alina Fatima  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fatima Zaheer's Blog | Content Writing & SEO Insights",
+    title: "Alina Fatima 's Blog | Content Writing & SEO Insights",
     description:
-      "Discover practical content writing, AI writing, SEO, paraphrasing, and copywriting insights from Fatima Zaheer.",
+      "Discover practical content writing, AI writing, SEO, paraphrasing, and copywriting insights from Alina Fatima .",
     images: ["/biography.webp"],
   },
   alternates: {
@@ -73,86 +73,121 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     id: 1,
-    title: "Student-Friendly AI Tools: The Key to Academic Excellence",
+    title: "The Art of Not Thinking",
     excerpt:
-      "Discover how student-friendly AI tools can support academic work, improve productivity, and help students achieve better learning outcomes.",
+      "An engaging and reflective article exploring overthinking, mindfulness, and the importance of creating mental space in everyday life.",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    category: "AI & Education",
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    category: "Lifestyle & Personal Growth",
     date: "2024-04-10",
     readTime: "6 min read",
     liveUrl:
-      "https://rondasomontano.com/revista/188782/herramientas-de-ia-amigables-para-los-estudiantes-la-clave-de-la-excelencia-academica/",
+      "https://medium.com/@onecup.oftea/the-art-of-not-thinking-c345efd4fa5c",
     featured: true,
   },
+
   {
     id: 2,
-    title: "Can Rephrasing the Text Help Students Improve Their Writing Skills?",
+    title: "5 Daily Habits for Language Fluency",
     excerpt:
-      "Learn how text rephrasing can help students develop clearer writing, improve sentence structure, and communicate their ideas more effectively.",
+      "Discover five practical daily habits that can help language learners improve fluency, build consistency, expand vocabulary, and communicate with greater confidence.",
     image:
-      "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
-    category: "Academic Writing",
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+    category: "Educational Writing",
     date: "2024-04-05",
     readTime: "7 min read",
     liveUrl:
-      "https://www.goinformation.info/7425/reformulation-du-texte-peut-elle-aider-les-etudiants-a-ameliorer-capacites-redactionnelles/",
+      "https://medium.com/no-time/want-to-speak-any-language-fluently-start-these-5-daily-habits-cd2cec7e9d1f",
     featured: true,
   },
+
   {
     id: 3,
-    title: "How to Summarize an Article Without Plagiarizing It?",
+    title: "I Woke Up at 4:30 AM for 30 Days",
     excerpt:
-      "A practical guide to creating accurate article summaries while maintaining originality and avoiding plagiarism.",
+      "A personal-development article exploring the reality of waking up at 4:30 AM for 30 consecutive days, including challenges, experiences, and lessons learned.",
     image:
-      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
-    category: "Content Writing",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+    category: "Lifestyle Writing",
     date: "2024-03-28",
-    readTime: "5 min read",
+    readTime: "8 min read",
     liveUrl:
-      "https://tecnowiz.net/come-riassumere-un-articolo-senza-plagiarlo/",
+      "https://medium.com/@reshmadudhat29/i-woke-up-at-4-30-am-for-30-days-the-truth-nobody-tells-you-b704f0f86c3b",
+    featured: true,
+  },
+
+  {
+    id: 4,
+    title: "Faith, Love & Identity in Adulthood",
+    excerpt:
+      "An honest and thoughtful piece discussing faith, relationships, identity, and personal growth through the different experiences of adulthood.",
+    image:
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
+    category: "Feature Writing",
+    date: "2024-03-20",
+    readTime: "8 min read",
+    liveUrl:
+      "https://educationbeing.com/talking-about-the-hard-things-faith-love-and-identity-in-adulthood-honest-review/",
     featured: false,
   },
-  {
-  id: 4,
-  title: "The Role of AI Paraphrasing Tools in Content Creation",
-  excerpt:
-    "Explore the role of AI paraphrasing tools in modern content creation and how they can help writers refine and improve their content.",
-  image:
-    "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-  category: "AI & Content",
-  date: "2024-03-20",
-  readTime: "8 min read",
-  liveUrl:
-    "https://zipboard.co/blog/uncategorized/the-role-of-ai-paraphrasing-tools-in-content-creation/",
-  featured: false,
-},
+
   {
     id: 5,
-    title: "Are AI Paraphrasing Tools Helpful for Writing Portuguese Articles?",
+    title: "Replacement Diplomas & College Degrees",
     excerpt:
-      "Explore how AI paraphrasing technology can assist writers working with Portuguese articles while improving clarity and readability.",
+      "An informational article covering replacement diplomas and college degrees, presented in a clear, structured, and reader-friendly format.",
     image:
-      "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80",
-    category: "AI Writing",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    category: "Informational Content",
     date: "2024-03-15",
-    readTime: "6 min read",
+    readTime: "7 min read",
     liveUrl:
-      "https://jornaljoseensenews.com.br/",
+      "https://educationbeing.com/buy-fast-and-realistic-looking-replacement-diplomas-and-college-degrees/",
     featured: false,
   },
+
   {
     id: 6,
-    title: "How AI Helps to Polish Content in Copywriting",
+    title: "AI Tools for Better Content Creation",
     excerpt:
-      "Learn how AI-powered tools can help copywriters polish their content, improve readability, and create stronger written communication.",
+      "Explore how modern AI tools can support writers during research, drafting, editing, and content refinement while maintaining quality and originality.",
     image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-    category: "Copywriting",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+    category: "AI & Content",
     date: "2024-03-10",
     readTime: "6 min read",
     liveUrl:
+      "https://www.jornaldobairroalto.com.br/",
+    featured: false,
+  },
+
+  {
+    id: 7,
+    title: "Effective SEO Content for Better Online Visibility",
+    excerpt:
+      "A practical look at creating relevant, useful, and search-friendly content that helps websites communicate their value while improving organic visibility.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Writing",
+    date: "2024-03-05",
+    readTime: "7 min read",
+    liveUrl:
       "https://jornaldobairroalto.com.br/",
+    featured: false,
+  },
+
+  {
+    id: 8,
+    title: "Building Quality Content Through Research & Strategy",
+    excerpt:
+      "Discover how research, audience understanding, content planning, and SEO principles work together to create valuable and engaging online content.",
+    image:
+      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
+    category: "Content Strategy",
+    date: "2024-02-28",
+    readTime: "6 min read",
+    liveUrl:
+      "https://www.bankingsupport.info/",
     featured: false,
   },
 ]
@@ -183,7 +218,7 @@ export default function BlogPage() {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore Fatima Zaheer's writing insights, AI content strategies,
+            Explore Alina Fatima 's writing insights, AI content strategies,
             academic writing tips, copywriting techniques, and practical ideas
             for creating better content.
           </p>

@@ -11,10 +11,10 @@ import FloatingWhatsApp from "@/components/floating-whatsapp"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Fatima Zaheer  - Expert Content Writer & SEO Copywriter",
+  title: "Alina Fatima   - Expert Content Writer & SEO Copywriter",
 
   description:
-    "DiscoverFatima Zaheer 's professional content writing portfolio. Expert in SEO content, blog writing, and copywriting to boost engagement and rankings.",
+    "DiscoverAlina Fatima  's professional content writing portfolio. Expert in SEO content, blog writing, and copywriting to boost engagement and rankings.",
 
   keywords: [
     "content writer",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "copywriting",
     "content strategy",
     "freelance writer",
-    "Fatima Zaheer  portfolio",
+    "Alina Fatima   portfolio",
     "storycup",
   ],
 
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
 
-  authors: [{ name: "Fatima Zaheer " }],
+  authors: [{ name: "Alina Fatima  " }],
 
   openGraph: {
-    title: "Fatima Zaheer  - Expert Content Writer & Copywriter",
+    title: "Alina Fatima   - Expert Content Writer & Copywriter",
     description:
-      "ExploreFatima Zaheer 's portfolio of engaging blog posts, SEO content, and persuasive copywriting for businesses and brands.",
+      "ExploreAlina Fatima  's portfolio of engaging blog posts, SEO content, and persuasive copywriting for businesses and brands.",
     type: "website",
     url: "https://storycup.vercel.app/",
     images: [
@@ -46,17 +46,17 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Fatima Zaheer  Content Writing Portfolio",
+        alt: "Alina Fatima   Content Writing Portfolio",
       },
     ],
-    siteName: "Fatima Zaheer  Portfolio",
+    siteName: "Alina Fatima   Portfolio",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Fatima Zaheer  - Expert Content Writer & Copywriter",
+    title: "Alina Fatima   - Expert Content Writer & Copywriter",
     description:
-      "ExploreFatima Zaheer 's portfolio of engaging blog posts, SEO content, and persuasive copywriting.",
+      "ExploreAlina Fatima  's portfolio of engaging blog posts, SEO content, and persuasive copywriting.",
     images: ["/logo.png"],
   },
 
