@@ -370,8 +370,7 @@ export default function AboutPage() {
 
                   <div>
                     <CardTitle>
-                      Bachelor of Information Technology
-                    </CardTitle>
+                      Bechlor of business and information technology                    </CardTitle>
                     <p className="text-muted-foreground">
                       BBIT • In Progress
                     </p>
