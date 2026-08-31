@@ -46,7 +46,7 @@ export default function HomePage() {
                   Available for freelance writing projects
                 </Badge>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight break-words">
-                  Hi, I'm <span className="text-blue-600">Alina Fatima  </span>
+                  Hi, I'm <span className="text-blue-600">Alina Rajput  </span>
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
                   Creative Content Writer & Copywriter

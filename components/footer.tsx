@@ -12,7 +12,7 @@ export function Footer() {
             <div className="flex items-center">
   <img
     src="/logo.png"
-    alt="Alina Fatima   Logo"
+    alt="Alina Rajput   Logo"
     className="h-auto w-[150px] max-w-full object-contain sm:w-[200px] md:w-[220px] lg:w-[240px]"
   />
 </div>
@@ -107,7 +107,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Alina Fatima  . All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Alina Rajput  . All rights reserved.</p>
         </div>
       </div>
     </footer>

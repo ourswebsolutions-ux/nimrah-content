@@ -10,11 +10,11 @@ import { Calendar, Clock, Search, ArrowRight } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Alina Fatima 's Blog | Content Writing, AI & SEO Insights",
+  title: "Alina Rajput 's Blog | Content Writing, AI & SEO Insights",
   description:
-    "Explore Alina Fatima 's blog for practical insights on content writing, AI tools, paraphrasing, academic writing, copywriting, and SEO content.",
+    "Explore Alina Rajput 's blog for practical insights on content writing, AI tools, paraphrasing, academic writing, copywriting, and SEO content.",
   keywords: [
-    "Alina Fatima  blog",
+    "Alina Rajput  blog",
     "content writing",
     "content writing tips",
     "SEO content writing",
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     "AI writing tools",
     "content creation",
   ],
-  authors: [{ name: "Alina Fatima " }],
+  authors: [{ name: "Alina Rajput " }],
   openGraph: {
-    title: "Alina Fatima 's Blog | Content Writing, AI & SEO Insights",
+    title: "Alina Rajput 's Blog | Content Writing, AI & SEO Insights",
     description:
-      "Read Alina Fatima 's latest articles covering content writing, AI-powered writing tools, academic writing, paraphrasing, and copywriting.",
+      "Read Alina Rajput 's latest articles covering content writing, AI-powered writing tools, academic writing, paraphrasing, and copywriting.",
     type: "website",
     url: "https://storycup.vercel.app/blog",
     images: [
@@ -42,16 +42,16 @@ export const metadata: Metadata = {
         url: "/blog-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Alina Fatima  Blog - Content Writing and AI Insights",
+        alt: "Alina Rajput  Blog - Content Writing and AI Insights",
       },
     ],
-    siteName: "Alina Fatima  Portfolio",
+    siteName: "Alina Rajput  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alina Fatima 's Blog | Content Writing & SEO Insights",
+    title: "Alina Rajput 's Blog | Content Writing & SEO Insights",
     description:
-      "Discover practical content writing, AI writing, SEO, paraphrasing, and copywriting insights from Alina Fatima .",
+      "Discover practical content writing, AI writing, SEO, paraphrasing, and copywriting insights from Alina Rajput .",
     images: ["/biography.webp"],
   },
   alternates: {
@@ -218,7 +218,7 @@ export default function BlogPage() {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore Alina Fatima 's writing insights, AI content strategies,
+            Explore Alina Rajput 's writing insights, AI content strategies,
             academic writing tips, copywriting techniques, and practical ideas
             for creating better content.
           </p>

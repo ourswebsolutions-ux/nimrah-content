@@ -27,7 +27,7 @@ const initialReviews: Review[] = [
   { id: "5", name: "Muhammad Ali", country: "Pakistan", message: "Editing service polished my manuscript beautifully.", rating: 5, service: "Editing", date: "2025-01-30", timestamp: new Date("2025-01-30").getTime() },
   { id: "6", name: "Rahul Gupta", country: "India", message: "Great SEO strategies, but could be faster.", rating: 3, service: "SEO Content", date: "2024-12-15", timestamp: new Date("2024-12-15").getTime() },
   { id: "7", name: "Sarah Davis", country: "USA", message: "Blog posts were creative and on-brand!", rating: 5, service: "Blog Writing", date: "2024-11-20", timestamp: new Date("2024-11-20").getTime() },
-  { id: "8", name: "Fatima Ahmed", country: "Pakistan", message: "Copywriting was persuasive and effective.", rating: 4, service: "Copywriting", date: "2024-10-10", timestamp: new Date("2024-10-10").getTime() },
+  { id: "8", name: "Rajput Ahmed", country: "Pakistan", message: "Copywriting was persuasive and effective.", rating: 4, service: "Copywriting", date: "2024-10-10", timestamp: new Date("2024-10-10").getTime() },
   { id: "9", name: "Ananya Patel", country: "India", message: "Website content needed more depth.", rating: 3, service: "Website Content", date: "2024-09-05", timestamp: new Date("2024-09-05").getTime() },
   { id: "10", name: "Michael Brown", country: "USA", message: "Editing was thorough and improved clarity.", rating: 5, service: "Editing", date: "2024-08-15", timestamp: new Date("2024-08-15").getTime() },
   { id: "11", name: "Hassan Raza", country: "Pakistan", message: "SEO content was well-researched.", rating: 4, service: "SEO Content", date: "2024-07-20", timestamp: new Date("2024-07-20").getTime() },

@@ -21,11 +21,11 @@ import { ExternalLink } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Alina Fatima 's Portfolio | Professional Content Writing",
+  title: "Alina Rajput 's Portfolio | Professional Content Writing",
   description:
-    "Explore Alina Fatima 's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
+    "Explore Alina Rajput 's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
   keywords: [
-    "Alina Fatima  portfolio",
+    "Alina Rajput  portfolio",
     "content writing portfolio",
     "SEO content writer",
     "professional content writer",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     "copywriting portfolio",
     "digital content writer",
   ],
-  authors: [{ name: "Alina Fatima " }],
+  authors: [{ name: "Alina Rajput " }],
   openGraph: {
-    title: "Alina Fatima 's Portfolio | Professional Content Writing",
+    title: "Alina Rajput 's Portfolio | Professional Content Writing",
     description:
       "A selection of professional content writing projects including website copy, SEO content, scripts, social media campaigns, email marketing, and product content.",
     type: "website",
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
         url: "/worldwideartical.jpg",
         width: 1200,
         height: 630,
-        alt: "Alina Fatima  Content Writing Portfolio",
+        alt: "Alina Rajput  Content Writing Portfolio",
       },
     ],
-    siteName: "Alina Fatima  Portfolio",
+    siteName: "Alina Rajput  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alina Fatima 's Portfolio | Content Writing",
+    title: "Alina Rajput 's Portfolio | Content Writing",
     description:
       "Explore professional content writing, SEO copywriting, scripts, campaigns, product content, and website copy.",
     images: ["/worldwideartical.jpg"],
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CreativeWork",
-      name: "Alina Fatima 's Content Writing Portfolio",
+      name: "Alina Rajput 's Content Writing Portfolio",
       author: {
         "@type": "Person",
-        name: "Alina Fatima ",
+        name: "Alina Rajput ",
       },
       url: "https://storycup.vercel.app/portfolio",
       description:

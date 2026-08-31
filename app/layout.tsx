@@ -11,10 +11,10 @@ import FloatingWhatsApp from "@/components/floating-whatsapp"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Alina Fatima   - Expert Content Writer & SEO Copywriter",
+  title: "Alina Rajput   - Expert Content Writer & SEO Copywriter",
 
   description:
-    "DiscoverAlina Fatima  's professional content writing portfolio. Expert in SEO content, blog writing, and copywriting to boost engagement and rankings.",
+    "DiscoverAlina Rajput  's professional content writing portfolio. Expert in SEO content, blog writing, and copywriting to boost engagement and rankings.",
 
   keywords: [
     "content writer",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "copywriting",
     "content strategy",
     "freelance writer",
-    "Alina Fatima   portfolio",
+    "Alina Rajput   portfolio",
     "storycup",
   ],
 
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
 
-  authors: [{ name: "Alina Fatima  " }],
+  authors: [{ name: "Alina Rajput  " }],
 
   openGraph: {
-    title: "Alina Fatima   - Expert Content Writer & Copywriter",
+    title: "Alina Rajput   - Expert Content Writer & Copywriter",
     description:
-      "ExploreAlina Fatima  's portfolio of engaging blog posts, SEO content, and persuasive copywriting for businesses and brands.",
+      "ExploreAlina Rajput  's portfolio of engaging blog posts, SEO content, and persuasive copywriting for businesses and brands.",
     type: "website",
     url: "https://storycup.vercel.app/",
     images: [
@@ -46,17 +46,17 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Alina Fatima   Content Writing Portfolio",
+        alt: "Alina Rajput   Content Writing Portfolio",
       },
     ],
-    siteName: "Alina Fatima   Portfolio",
+    siteName: "Alina Rajput   Portfolio",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Alina Fatima   - Expert Content Writer & Copywriter",
+    title: "Alina Rajput   - Expert Content Writer & Copywriter",
     description:
-      "ExploreAlina Fatima  's portfolio of engaging blog posts, SEO content, and persuasive copywriting.",
+      "ExploreAlina Rajput  's portfolio of engaging blog posts, SEO content, and persuasive copywriting.",
     images: ["/logo.png"],
   },
 
