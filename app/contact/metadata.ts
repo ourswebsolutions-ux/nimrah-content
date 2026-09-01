@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "ContactAlina Rajput  - Best Content Writer in Pakistan",
+  title: "ContactMUNEEBA KIRAN  - Best Content Writer in Pakistan",
   description:
-    "ContactAlina Rajput  for top content writing services in Pakistan, SEO content, and copywriting via WhatsApp or email.",
+    "ContactMUNEEBA KIRAN  for top content writing services in Pakistan, SEO content, and copywriting via WhatsApp or email.",
   keywords: [
     "content writer Karachi contact number",
     "content writer Karachi contact number WhatsApp",
@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     "content writer rates per word",
     "freelance content writer near me",
   ],
-  authors: [{ name: "Alina Rajput  " }],
+  authors: [{ name: "MUNEEBA KIRAN  " }],
   openGraph: {
-    title: "ContactAlina Rajput  - Best Content Writer in Pakistan",
+    title: "ContactMUNEEBA KIRAN  - Best Content Writer in Pakistan",
     description:
-      "ReachAlina Rajput  for expert content writing services, SEO content, and copywriting in Pakistan via WhatsApp or email.",
+      "ReachMUNEEBA KIRAN  for expert content writing services, SEO content, and copywriting in Pakistan via WhatsApp or email.",
     type: "website",
     url: "https://yourwebsite.com/contact",
     images: [
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
         url: "/contact-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "ContactAlina Rajput  for Content Writing Services",
+        alt: "ContactMUNEEBA KIRAN  for Content Writing Services",
       },
     ],
-    siteName: "Alina Rajput  Portfolio",
+    siteName: "MUNEEBA KIRAN  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ContactAlina Rajput  - Content Writing Services",
+    title: "ContactMUNEEBA KIRAN  - Content Writing Services",
     description:
-      "Get in touch withAlina Rajput  for SEO content, blog writing, and copywriting services in Pakistan, USA, and Dubai.",
+      "Get in touch withMUNEEBA KIRAN  for SEO content, blog writing, and copywriting services in Pakistan, USA, and Dubai.",
     images: ["/contact-og-image.jpg"],
   },
   alternates: {
@@ -68,12 +68,12 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Alina Rajput  ",
+      name: "MUNEEBA KIRAN  ",
       jobTitle: "Content Writer & SEO Copywriter",
       url: "https://yourwebsite.com/contact",
       sameAs: [
-        "https://www.linkedin.com/in/Alina Rajput  ",
-        "https://twitter.com/Alina Rajput  ",
+        "https://www.linkedin.com/in/MUNEEBA KIRAN  ",
+        "https://twitter.com/MUNEEBA KIRAN  ",
         "https://wa.me/yourwhatsappnumber",
       ],
       contactPoint: [
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
         },
       ],
       description:
-        "ContactAlina Rajput  , a top content writer in Pakistan, for professional content writing services, including SEO content, blog writing, and copywriting, via WhatsApp or email.",
+        "ContactMUNEEBA KIRAN  , a top content writer in Pakistan, for professional content writing services, including SEO content, blog writing, and copywriting, via WhatsApp or email.",
     }),
   },
 }

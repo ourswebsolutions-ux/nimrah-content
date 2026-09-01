@@ -33,7 +33,7 @@ export function Header() {
 <Link href="/" className="flex items-center shrink-0">
   <img
     src="/logo.png"
-    alt="Alina Rajput   Logo"
+    alt="MUNEEBA KIRAN   Logo"
     className="
       h-24 w-24
       sm:h-26 sm:w-26

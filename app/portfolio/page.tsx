@@ -21,11 +21,11 @@ import { ExternalLink } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Alina Rajput 's Portfolio | Professional Content Writing",
+  title: "MUNEEBA KIRAN 's Portfolio | Professional Content Writing",
   description:
-    "Explore Alina Rajput 's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
+    "Explore MUNEEBA KIRAN 's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
   keywords: [
-    "Alina Rajput  portfolio",
+    "MUNEEBA KIRAN  portfolio",
     "content writing portfolio",
     "SEO content writer",
     "professional content writer",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     "copywriting portfolio",
     "digital content writer",
   ],
-  authors: [{ name: "Alina Rajput " }],
+  authors: [{ name: "MUNEEBA KIRAN " }],
   openGraph: {
-    title: "Alina Rajput 's Portfolio | Professional Content Writing",
+    title: "MUNEEBA KIRAN 's Portfolio | Professional Content Writing",
     description:
       "A selection of professional content writing projects including website copy, SEO content, scripts, social media campaigns, email marketing, and product content.",
     type: "website",
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
         url: "/worldwideartical.jpg",
         width: 1200,
         height: 630,
-        alt: "Alina Rajput  Content Writing Portfolio",
+        alt: "MUNEEBA KIRAN  Content Writing Portfolio",
       },
     ],
-    siteName: "Alina Rajput  Portfolio",
+    siteName: "MUNEEBA KIRAN  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alina Rajput 's Portfolio | Content Writing",
+    title: "MUNEEBA KIRAN 's Portfolio | Content Writing",
     description:
       "Explore professional content writing, SEO copywriting, scripts, campaigns, product content, and website copy.",
     images: ["/worldwideartical.jpg"],
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CreativeWork",
-      name: "Alina Rajput 's Content Writing Portfolio",
+      name: "MUNEEBA KIRAN 's Content Writing Portfolio",
       author: {
         "@type": "Person",
-        name: "Alina Rajput ",
+        name: "MUNEEBA KIRAN ",
       },
       url: "https://storycup.vercel.app/portfolio",
       description:
@@ -98,153 +98,115 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
-    title: "The Art of Not Thinking",
+    title: "Understanding Imposter Syndrome: What Your Mind Is Trying to Tell You",
     description:
-      "A reflective and engaging article exploring the importance of slowing down, reducing overthinking, and developing a healthier relationship with thoughts and everyday life.",
+      "A compassionate, science-backed explainer on anxiety responses that demystifies the fight-or-flight mechanism for general readers, with practical coping strategies woven throughout.",
     image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-    category: "Article Writing",
+      "https://images.unsplash.com/photo-1573497019940-1cfe4dcfbc2d?auto=format&fit=crop&w=1200&q=80",
+    category: "Mental Health Blog",
     technologies: [
-      "Content Writing",
-      "Research",
-      "Storytelling",
-      "Medium",
+      "Mental Health Writing",
+      "Clinical Accuracy",
+      "Empathetic Storytelling",
+      "Science Communication",
     ],
     liveUrl:
-      "https://medium.com/@onecup.oftea/the-art-of-not-thinking-c345efd4fa5c",
+      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
     featured: true,
   },
 
   {
     id: 2,
-    title: "5 Daily Habits for Language Fluency",
+    title: "Understanding Withdrawal Symptoms: What Is Happening Inside Your Body",
     description:
-      "Created a practical and reader-friendly article sharing five daily habits that can help learners improve language fluency, consistency, vocabulary, and communication skills.",
+      "An SEO-optimised pillar article targeting high-volume wellness keywords. Structured for featured snippets with expert citations, internal linking, and a clear content hierarchy.",
     image:
-      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
-    category: "Educational Content",
+      "https://images.unsplash.com/photo-1559757175-5700dde9bd1c?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO Article",
     technologies: [
-      "Blog Writing",
-      "Educational Writing",
-      "Research",
-      "SEO Content",
+      "SEO Writing",
+      "Wellness Content",
+      "Keyword Research",
+      "Pillar Content",
     ],
     liveUrl:
-      "https://medium.com/no-time/want-to-speak-any-language-fluently-start-these-5-daily-habits-cd2cec7e9d1f",
+      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
     featured: true,
   },
 
   {
     id: 3,
-    title: "30-Day 4:30 AM Experiment",
+    title: "Brand Voice & Social Media Copy for a Wellness Startup",
     description:
-      "A long-form personal development article documenting the experience of waking up at 4:30 AM for 30 days, with practical insights, challenges, observations, and lessons learned.",
+      "Developed a full content suite including Instagram captions, ad copy, and email sequences — maintaining a warm, professional tone aligned with the brand’s audience of young professionals.",
     image:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
-    category: "Lifestyle Writing",
+      "https://images.unsplash.com/photo-1611162617474-5b21e11e67a7?auto=format&fit=crop&w=1200&q=80",
+    category: "Copywriting Campaign",
     technologies: [
-      "Long-Form Writing",
-      "Storytelling",
-      "Research",
-      "Medium",
+      "Copywriting",
+      "Social Media Copy",
+      "Brand Voice",
+      "Email Sequences",
     ],
     liveUrl:
-      "https://medium.com/@reshmadudhat29/i-woke-up-at-4-30-am-for-30-days-the-truth-nobody-tells-you-b704f0f86c3b",
+      "https://docs.google.com/document/d/1Kg2ATKhtgqGSMAWTzPyed8hA6sCkvglY/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
     featured: true,
   },
 
   {
     id: 4,
-    title: "Faith, Love & Identity in Adulthood",
+    title: "Neurodevelopmental Parent Guides & FAQs",
     description:
-      "An honest and thoughtful piece discussing the complexities of faith, love, identity, and personal growth during adulthood while connecting with readers through relatable storytelling.",
+      "Empathetic, accessible written resources for parents and caregivers of children with ADHD, Autism Spectrum Disorder, and other neurodevelopmental conditions — explaining complex diagnostic processes in plain, stigma-free language.",
     image:
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-    category: "Feature Writing",
+      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=80",
+    category: "Psychoeducational Content",
     technologies: [
-      "Article Writing",
-      "Storytelling",
-      "Research",
-      "Editorial Content",
+      "Parent Resources",
+      "Clinical Translation",
+      "ADHD & ASD Content",
+      "Accessible Writing",
     ],
     liveUrl:
-      "https://educationbeing.com/talking-about-the-hard-things-faith-love-and-identity-in-adulthood-honest-review/",
+      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
     featured: true,
   },
 
   {
     id: 5,
-    title: "Replacement Diplomas & College Degrees",
+    title: "Mental Health & Behavioural Health Blog Series",
     description:
-      "Developed detailed informational content covering replacement diplomas and college degrees, structured to provide clear information while maintaining an engaging and easy-to-read format.",
+      "SEO-optimised blog articles, landing pages, and patient guides on mental health, psychology, and behavioural health written for digital health platforms serving international and UK audiences.",
     image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-    category: "Informational Content",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO Content Writing",
     technologies: [
-      "SEO Writing",
-      "Research",
-      "Web Content",
-      "Informational Writing",
+      "SEO Content",
+      "Mental Health Writing",
+      "Patient Guides",
+      "On-Page SEO",
     ],
     liveUrl:
-      "https://educationbeing.com/buy-fast-and-realistic-looking-replacement-diplomas-and-college-degrees/",
+      "https://docs.google.com/document/d/1Kg2ATKhtgqGSMAWTzPyed8hA6sCkvglY/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
     featured: false,
   },
 
   {
     id: 6,
-    title: "SEO Website Content",
+    title: "UK Healthcare & Neurodevelopmental Landing Pages",
     description:
-      "Created search-engine-friendly website content focused on clear communication, keyword relevance, user engagement, and improving organic search visibility.",
+      "Clear, clinically accurate, and stigma-free website content and FAQs focused on ADHD, Autism assessments, and family support — written in British English with UK healthcare terminology.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1576091160550-2173dba999f0?auto=format&fit=crop&w=1200&q=80",
     category: "Website Content",
     technologies: [
-      "SEO Writing",
-      "Keyword Research",
-      "Website Copy",
-      "On-Page SEO",
+      "UK Healthcare Writing",
+      "British English",
+      "Landing Pages",
+      "Clinical Accuracy",
     ],
     liveUrl:
-      "https://www.bankingsupport.info/",
-    featured: false,
-  },
-
-  {
-    id: 7,
-    title: "SEO Article & Guest Posting Content",
-    description:
-      "Produced quality SEO-focused articles designed for guest posting and off-page SEO campaigns, with an emphasis on relevance, readability, keyword placement, and link-building objectives.",
-    image:
-      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
-    category: "Guest Posting",
-    technologies: [
-      "Guest Posting",
-      "SEO Writing",
-      "Link Building",
-      "Article Writing",
-    ],
-    liveUrl:
-      "https://jornaldobairroalto.com.br/",
-    featured: false,
-  },
-
-  {
-    id: 8,
-    title: "Professional SEO Content & Outreach",
-    description:
-      "Developed optimized written content and supported outreach-focused campaigns with attention to search visibility, content quality, relevance, and authority-building strategies.",
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
-    category: "SEO & Outreach",
-    technologies: [
-      "SEO",
-      "Content Writing",
-      "Outreach",
-      "Link Building",
-    ],
-    liveUrl:
-      "https://jornaljoseensenews.com.br/",
+      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
     featured: false,
   },
 ]

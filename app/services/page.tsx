@@ -7,9 +7,9 @@ import { Footer } from "@/components/footer"
 import { CheckCircle, FileText, PenLine, Search, Newspaper, MessageCircle } from "lucide-react"
 import { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Alina Rajput  's Services - Best Content Writing & SEO Copywriting",
+  title: "MUNEEBA KIRAN  's Services - Best Content Writing & SEO Copywriting",
   description:
-    "HireAlina Rajput  for top content writing services in Pakistan, including SEO content, blog writing, and copywriting to elevate your brand.",
+    "HireMUNEEBA KIRAN  for top content writing services in Pakistan, including SEO content, blog writing, and copywriting to elevate your brand.",
   keywords: [
     "best content writing services",
     "content writing services in Pakistan",
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     "professional content writing services",
     "content writer Karachi",
   ],
-  authors: [{ name: "Alina Rajput  " }],
+  authors: [{ name: "MUNEEBA KIRAN  " }],
   openGraph: {
-    title: "Alina Rajput  's Services - Best Content Writing & SEO in Pakistan",
+    title: "MUNEEBA KIRAN  's Services - Best Content Writing & SEO in Pakistan",
     description:
-      "Alina Rajput  offers expert content writing services in Pakistan, including SEO content, blog writing, and copywriting for businesses worldwide.",
+      "MUNEEBA KIRAN  offers expert content writing services in Pakistan, including SEO content, blog writing, and copywriting for businesses worldwide.",
     type: "website",
     url: "https://storycup.vercel.app/services", // Replace with your actual Services page URL
     images: [
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
         url: "/services-og-image.jpg", // Replace with a relevant image for the Services page
         width: 1200,
         height: 630,
-        alt: "Alina Rajput  Best Content Writing Services",
+        alt: "MUNEEBA KIRAN  Best Content Writing Services",
       },
     ],
-    siteName: "Alina Rajput  Portfolio",
+    siteName: "MUNEEBA KIRAN  Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alina Rajput  's Services - Best Content Writing & SEO",
+    title: "MUNEEBA KIRAN  's Services - Best Content Writing & SEO",
     description:
-      "HireAlina Rajput  for professional content writing, SEO content, and blog writing services in Pakistan and beyond.",
+      "HireMUNEEBA KIRAN  for professional content writing, SEO content, and blog writing services in Pakistan and beyond.",
     images: ["/services-og-image.jpg"], // Replace with your actual image
   },
   alternates: {
@@ -67,15 +67,15 @@ export const metadata: Metadata = {
       serviceType: "Content Writing",
       provider: {
         "@type": "Person",
-        name: "Alina Rajput  ",
+        name: "MUNEEBA KIRAN  ",
       },
       url: "https://storycup.vercel.app/services", // Replace with your actual Services page URL
       sameAs: [
-        "https://www.linkedin.com/in/Alina Rajput  ", // Replace with your actual LinkedIn
-        "https://twitter.com/Alina Rajput  ", // Replace with your actual Twitter
+        "https://www.linkedin.com/in/MUNEEBA KIRAN  ", // Replace with your actual LinkedIn
+        "https://twitter.com/MUNEEBA KIRAN  ", // Replace with your actual Twitter
       ],
       description:
-        "Alina Rajput  provides top content writing services in Pakistan, specializing in SEO content, blog writing, article writing, and copywriting for businesses globally.",
+        "MUNEEBA KIRAN  provides top content writing services in Pakistan, specializing in SEO content, blog writing, article writing, and copywriting for businesses globally.",
       areaServed: [
         "Pakistan",
         "Karachi",

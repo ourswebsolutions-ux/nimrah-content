@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -10,32 +9,30 @@ import type { Metadata } from "next"
 import { DownloadResumeButton } from "@/components/DownloadResumeButton"
 
 export const metadata: Metadata = {
-  title: "About Alina Rajput | SEO & Content Writing Specialist",
+  title: "About MUNEEBA KIRAN | Clinical Psychologist & Neurodevelopmental Content Writer",
   description:
-    "Learn about Alina Rajput, an SEO & Content Writing Specialist from Okara, Pakistan with 2-3 years of freelance experience in SEO content writing, guest posting, outreach, and link building.",
+    "Learn about MUNEEBA KIRAN, a PMDCAP-qualified Senior Clinical Psychologist and Neurodevelopmental Content Writer from Karachi, Pakistan with 7+ years of clinical experience in ADHD, ASD, and neurodevelopmental assessment, combined with SEO content writing for UK healthcare platforms.",
   keywords: [
-    "Alina Rajput",
+    "MUNEEBA KIRAN",
+    "Clinical Psychologist",
+    "Neurodevelopmental Content Writer",
+    "UK Healthcare SEO",
+    "ADHD Content Writer",
+    "Autism Content Writer",
     "SEO Content Writer",
-    "SEO Specialist",
-    "Content Writer",
-    "Content Writing Specialist",
-    "SEO writer Pakistan",
-    "content writer Pakistan",
-    "freelance SEO writer",
-    "guest posting",
-    "link building",
-    "SEO content writing",
-    "off-page SEO",
-    "on-page SEO",
-    "blog writer",
-    "website content writer",
-    "SEO outreach",
+    "Mental Health Content Writer",
+    "Clinical Psychologist Pakistan",
+    "Neurodevelopmental Assessment",
+    "ADHD ASD Content",
+    "Healthcare SEO Writer",
+    "British English Content Writer",
+    "Remote Clinical Content Writer",
   ],
-  authors: [{ name: "Alina Rajput" }],
+  authors: [{ name: "MUNEEBA KIRAN" }],
   openGraph: {
-    title: "About Alina Rajput | SEO & Content Writing Specialist",
+    title: "About MUNEEBA KIRAN | Clinical Psychologist & Neurodevelopmental Content Writer",
     description:
-      "Discover Alina Rajput's professional experience, SEO skills, content writing expertise, education, and published work.",
+      "Discover MUNEEBA KIRAN's professional experience as a PMDCAP-qualified Clinical Psychologist specialising in neurodevelopmental content writing and UK healthcare SEO.",
     type: "website",
     url: "https://storycup.vercel.app/about",
     images: [
@@ -43,16 +40,16 @@ export const metadata: Metadata = {
         url: "/about-dp.jpeg",
         width: 1200,
         height: 630,
-        alt: "Alina Rajput - SEO & Content Writing Specialist",
+        alt: "MUNEEBA KIRAN - Clinical Psychologist & Neurodevelopmental Content Writer",
       },
     ],
-    siteName: "Alina Rajput Portfolio",
+    siteName: "MUNEEBA KIRAN Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Alina Rajput | SEO & Content Writing Specialist",
+    title: "About MUNEEBA KIRAN | Clinical Psychologist & Neurodevelopmental Content Writer",
     description:
-      "Learn about Alina Rajput's experience in SEO content writing, guest posting, outreach, and link building.",
+      "Learn about MUNEEBA KIRAN's experience in clinical psychology, neurodevelopmental assessment, and SEO content writing for UK healthcare platforms.",
     images: ["/about-dp.jpeg"],
   },
   alternates: {
@@ -73,16 +70,14 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Alina Rajput",
-      jobTitle: "SEO & Content Writing Specialist",
+      name: "MUNEEBA KIRAN",
+      jobTitle: "Clinical Psychologist & Neurodevelopmental Content Writer",
       url: "https://storycup.vercel.app/about",
-      email: "alinarajput458@gmail.com",
-      telephone: "+92 326 552 5303",
+      email: "muneeba_kiran126@hotmail.com",
+      telephone: "+92 334 3256312",
       description:
-        "Alina Rajput is an SEO and content professional from Okara, Pakistan with 2-3 years of freelance experience in SEO content writing, guest posting, outreach, and link building.",
-      sameAs: [
-        "https://www.linkedin.com/in/mahnoor-siddiqui-4725352a4/",
-      ],
+        "MUNEEBA KIRAN is a PMDCAP-qualified Senior Clinical Psychologist from Karachi, Pakistan with 7+ years of clinical experience in ADHD, Autism Spectrum Disorder, and neurodevelopmental assessment, combined with professional SEO content writing for UK healthcare platforms.",
+      sameAs: [],
     }),
   },
 }
@@ -99,7 +94,7 @@ export default function AboutPage() {
           <div className="relative w-32 h-32 mx-auto mb-6">
             <Image
               src="/about-dp.jpeg"
-              alt="Alina Rajput"
+              alt="MUNEEBA KIRAN"
               fill
               className="rounded-full border-4 border-primary/20 object-cover"
             />
@@ -110,12 +105,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I’m Alina Rajput, an SEO & Content Writing Specialist from Okara,
-            Pakistan with 2-3 years of freelance experience. I specialize in
-            creating SEO-friendly blogs and website content, guest posting,
-            outreach, and quality link building. My goal is to create
-            valuable, engaging content while helping businesses improve their
-            online visibility, search rankings, and digital presence.
+            I’m MUNEEBA KIRAN, a PMDCAP-qualified Senior Clinical Psychologist and Neurodevelopmental Content Writer from Karachi, Pakistan. With 7+ years of hands-on clinical experience in ADHD, Autism Spectrum Disorder (ASD), Cerebral Palsy, and Global Developmental Delay, combined with 2+ years of professional SEO content writing for digital health platforms, I specialise in translating complex neurodevelopmental and psychological concepts into warm, accessible, stigma-free content for UK audiences — without sacrificing clinical accuracy.
           </p>
 
           <DownloadResumeButton />
@@ -137,9 +127,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Freelance SEO & Content Writer</CardTitle>
+                    <CardTitle>Mental Health Content Writer</CardTitle>
                     <p className="text-muted-foreground">
-                      Freelance • 2-3 Years
+                      Techmetixs Solution • Jan 2025 – Sep 2025
                     </p>
                   </div>
                 </div>
@@ -147,17 +137,14 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Create SEO-optimized content for websites and blogs across
-                  multiple niches. Develop engaging and well-researched
-                  articles while maintaining quality, relevance, and
-                  search-engine-friendly structure.
+                  Wrote SEO-optimised blog articles, landing pages, FAQs, and patient guides on mental health, psychology, and behavioural health for a digital health platform. Implemented on-page SEO best practices and consistently produced original, well-researched 800–1,500-word articles to weekly deadlines.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
                   <Badge variant="secondary">SEO Content Writing</Badge>
-                  <Badge variant="secondary">Blog Writing</Badge>
-                  <Badge variant="secondary">Website Content</Badge>
-                  <Badge variant="secondary">SEO Copywriting</Badge>
+                  <Badge variant="secondary">Mental Health Content</Badge>
+                  <Badge variant="secondary">Patient Guides</Badge>
+                  <Badge variant="secondary">On-Page SEO</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -170,9 +157,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Guest Posting & Outreach Specialist</CardTitle>
+                    <CardTitle>Remote Psychologist & Clinical Assessor</CardTitle>
                     <p className="text-muted-foreground">
-                      Freelance • 2-3 Years
+                      Helping Hands Organization • Feb 2024 – Present
                     </p>
                   </div>
                 </div>
@@ -180,17 +167,14 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Manage guest posting placements and outreach for client
-                  websites by identifying relevant publishing opportunities,
-                  communicating with website owners, and maintaining quality
-                  placements.
+                  Delivering teletherapy and psychological assessments including neurodevelopmental presentations, ADHD, anxiety, and complex adjustment disorders. Providing clinical supervision to mental health trainees on assessment procedures and report writing.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Guest Posting</Badge>
-                  <Badge variant="secondary">Outreach</Badge>
-                  <Badge variant="secondary">Website Research</Badge>
-                  <Badge variant="secondary">Client Management</Badge>
+                  <Badge variant="secondary">Teletherapy</Badge>
+                  <Badge variant="secondary">Neurodevelopmental Assessment</Badge>
+                  <Badge variant="secondary">Clinical Supervision</Badge>
+                  <Badge variant="secondary">ADHD & Anxiety</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -203,9 +187,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Link Building Specialist</CardTitle>
+                    <CardTitle>Senior Clinical Psychologist — Field Team Lead</CardTitle>
                     <p className="text-muted-foreground">
-                      Freelance • 2-3 Years
+                      Helping Hands Pakistan • Sep 2023 – Mar 2024
                     </p>
                   </div>
                 </div>
@@ -213,17 +197,14 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Plan and execute link building campaigns focused on
-                  relevance and authority. Research suitable websites and
-                  maintain a portfolio of websites available for guest posting
-                  and link placement opportunities.
+                  Managed a high-complexity caseload of children with Autism Spectrum Disorder, Cerebral Palsy, ADHD, and Global Developmental Delay. Designed culturally adapted psychoeducational content for families of children with neurodevelopmental conditions.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Link Building</Badge>
-                  <Badge variant="secondary">Off-Page SEO</Badge>
-                  <Badge variant="secondary">Backlink Research</Badge>
-                  <Badge variant="secondary">Website Authority</Badge>
+                  <Badge variant="secondary">ASD & ADHD</Badge>
+                  <Badge variant="secondary">Cerebral Palsy</Badge>
+                  <Badge variant="secondary">Psychoeducational Content</Badge>
+                  <Badge variant="secondary">Team Leadership</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -259,18 +240,18 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Blog & Article Writing</span>
-                    <span>94%</span>
+                    <span>Neurodevelopmental Content</span>
+                    <span>96%</span>
                   </div>
-                  <Progress value={94} />
+                  <Progress value={96} />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Website Content</span>
-                    <span>90%</span>
+                    <span>Clinical-to-Accessible Translation</span>
+                    <span>94%</span>
                   </div>
-                  <Progress value={90} />
+                  <Progress value={94} />
                 </div>
 
               </CardContent>
@@ -280,7 +261,44 @@ export default function AboutPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  SEO & Strategy
+                  Clinical Expertise
+                </CardTitle>
+              </CardHeader>
+
+              <CardContent className="space-y-4">
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>ADHD & ASD Assessment</span>
+                    <span>95%</span>
+                  </div>
+                  <Progress value={95} />
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>Neurodevelopmental Assessment</span>
+                    <span>93%</span>
+                  </div>
+                  <Progress value={93} />
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>Psychoeducational Resources</span>
+                    <span>92%</span>
+                  </div>
+                  <Progress value={92} />
+                </div>
+
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                  SEO & Tools
                 </CardTitle>
               </CardHeader>
 
@@ -296,52 +314,15 @@ export default function AboutPage() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>Off-Page SEO</span>
-                    <span>92%</span>
+                    <span>Keyword Research</span>
+                    <span>88%</span>
                   </div>
-                  <Progress value={92} />
+                  <Progress value={88} />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span>SEO Research</span>
-                    <span>90%</span>
-                  </div>
-                  <Progress value={90} />
-                </div>
-
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  Outreach & Link Building
-                </CardTitle>
-              </CardHeader>
-
-              <CardContent className="space-y-4">
-
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span>Guest Posting</span>
-                    <span>95%</span>
-                  </div>
-                  <Progress value={95} />
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span>Outreach</span>
-                    <span>92%</span>
-                  </div>
-                  <Progress value={92} />
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span>Link Building</span>
+                    <span>UK Healthcare Terminology</span>
                     <span>94%</span>
                   </div>
                   <Progress value={94} />
@@ -370,9 +351,10 @@ export default function AboutPage() {
 
                   <div>
                     <CardTitle>
-                      Bechlor of business and information technology                    </CardTitle>
+                      Post-Magisterial Diploma in Counselling, Psychotherapy & Psychological Assessment (PMDCAP)
+                    </CardTitle>
                     <p className="text-muted-foreground">
-                      BBIT • In Progress
+                      University of Karachi • 2023 – 2024
                     </p>
                   </div>
                 </div>
@@ -380,9 +362,7 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Currently pursuing a Bachelor of Information Technology,
-                  developing a strong foundation in technology, digital
-                  concepts, research, analytical thinking, and communication.
+                  Registered clinical qualification with clinical rotations spanning hospitals, orphanages, and schools, including high-volume neurodevelopmental assessment fieldwork.
                 </p>
               </CardContent>
             </Card>
@@ -395,9 +375,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>SEO & Content Writing Experience</CardTitle>
+                    <CardTitle>Master of Arts in Psychology</CardTitle>
                     <p className="text-muted-foreground">
-                      Freelance Professional Experience
+                      University of Karachi • 2017
                     </p>
                   </div>
                 </div>
@@ -405,9 +385,7 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Practical experience in SEO content writing, guest posting,
-                  outreach, link building, and creating content designed to
-                  support online visibility and business growth.
+                  Specialisation in Industrial Psychology, Career Counselling & Organisational Behaviour. Built a strong foundation in psychological assessment, research, and clinical communication.
                 </p>
               </CardContent>
             </Card>
@@ -415,10 +393,10 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Awards */}
+        {/* Awards / Clinical Background Highlights */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Published Work Samples
+            Clinical & Content Highlights
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -431,9 +409,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>The Art of Not Thinking</CardTitle>
+                    <CardTitle>Neurodevelopmental Assessment Expertise</CardTitle>
                     <p className="text-muted-foreground">
-                      Medium
+                      Clinical Practice
                     </p>
                   </div>
                 </div>
@@ -441,13 +419,13 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Published writing sample demonstrating engaging,
-                  reader-focused storytelling and thoughtful content.
+                  Experienced in conducting and interpreting standardised neurodevelopmental assessments using internationally validated tools including CAT-A, HTP, HFD, SIT, and the Bender Gestalt.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Medium</Badge>
-                  <Badge variant="secondary">Article Writing</Badge>
+                  <Badge variant="secondary">CAT-A</Badge>
+                  <Badge variant="secondary">Bender Gestalt</Badge>
+                  <Badge variant="secondary">Assessment Tools</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -460,9 +438,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>5 Daily Habits for Language Fluency</CardTitle>
+                    <CardTitle>Psychoeducational Content Development</CardTitle>
                     <p className="text-muted-foreground">
-                      Medium
+                      Family-Facing Resources
                     </p>
                   </div>
                 </div>
@@ -470,13 +448,13 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Published article focused on practical habits for improving
-                  language fluency and maintaining reader engagement.
+                  Developed empathetic, accessible written resources and parent-facing guides explaining complex diagnostic processes and neurodevelopmental conditions in plain, compassionate language.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Medium</Badge>
-                  <Badge variant="secondary">Content Writing</Badge>
+                  <Badge variant="secondary">Parent Guides</Badge>
+                  <Badge variant="secondary">FAQs</Badge>
+                  <Badge variant="secondary">Stigma-Free Writing</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -489,9 +467,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>30-Day 4:30 AM Experiment</CardTitle>
+                    <CardTitle>School Mental Health Consultancy</CardTitle>
                     <p className="text-muted-foreground">
-                      Medium
+                      IQRA Secondary School • 2017 – 2023
                     </p>
                   </div>
                 </div>
@@ -499,14 +477,13 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Published lifestyle and experience-based content written to
-                  create curiosity, engagement, and a strong connection with
-                  readers.
+                  Implemented child safeguarding and neurodevelopmental support frameworks across a full school population and facilitated parent workshops on behavioural and developmental challenges.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Medium</Badge>
-                  <Badge variant="secondary">Lifestyle Writing</Badge>
+                  <Badge variant="secondary">Safeguarding</Badge>
+                  <Badge variant="secondary">Parent Workshops</Badge>
+                  <Badge variant="secondary">School Mental Health</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -519,9 +496,9 @@ export default function AboutPage() {
                   </div>
 
                   <div>
-                    <CardTitle>Faith, Love & Identity in Adulthood</CardTitle>
+                    <CardTitle>UK Healthcare Content Focus</CardTitle>
                     <p className="text-muted-foreground">
-                      Education Being
+                      British English & NHS Terminology
                     </p>
                   </div>
                 </div>
@@ -529,14 +506,13 @@ export default function AboutPage() {
 
               <CardContent>
                 <p className="text-muted-foreground">
-                  Published feature exploring personal identity, relationships,
-                  faith, and adulthood through an honest and engaging writing
-                  style.
+                  Proficient in British English spelling, grammar, and UK healthcare terminology. Available remotely from Pakistan and fully flexible to commit to UK business hours.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Education Being</Badge>
-                  <Badge variant="secondary">Feature Writing</Badge>
+                  <Badge variant="secondary">British English</Badge>
+                  <Badge variant="secondary">UK Healthcare SEO</Badge>
+                  <Badge variant="secondary">Remote Work</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -556,11 +532,12 @@ export default function AboutPage() {
               <div className="flex flex-wrap justify-center gap-3">
 
                 {[
-                  "The Art of Not Thinking",
-                  "5 Daily Habits for Language Fluency",
-                  "30-Day 4:30 AM Experiment",
-                  "Faith, Love & Identity in Adulthood",
-                  "Replacement Diplomas & College Degrees",
+                  "ADHD & Autism Assessment Guides",
+                  "Neurodevelopmental Parent Resources",
+                  "Mental Health Blog Articles",
+                  "Patient FAQs & Landing Pages",
+                  "Psychoeducational Content for Families",
+                  "Clinical Assessment Reports",
                 ].map((project) => (
                   <Badge
                     key={project}
