@@ -1,6 +1,6 @@
-
 import Image from "next/image"
 import Link from "next/link"
+import { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -17,35 +17,34 @@ import {
 } from "@/components/ui/tabs"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ExternalLink } from "lucide-react"
-import { Metadata } from "next"
+import { ExternalLink, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "MUNEEBA KIRAN 's Portfolio | Professional Content Writing",
+  title: "Nimrah Shahzad | SEO Content Writer & Social Media Strategist Portfolio",
   description:
-    "Explore MUNEEBA KIRAN 's professional writing portfolio featuring website content, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
+    "Explore Nimrah Shahzad's professional portfolio featuring Semantic SEO, SEO content writing, website copywriting, SaaS content, fitness and healthcare content, technology writing, social media strategy, and brand content.",
   keywords: [
-    "MUNEEBA KIRAN  portfolio",
-    "content writing portfolio",
-    "SEO content writer",
-    "professional content writer",
-    "website content writer",
+    "Nimrah Shahzad portfolio",
+    "SEO content writer portfolio",
+    "Semantic SEO writer",
     "SEO copywriter",
-    "YouTube script writer",
+    "content strategist",
+    "website content writer",
+    "social media strategist",
     "LinkedIn content writer",
-    "email copywriter",
-    "product description writer",
-    "press release writer",
-    "content writer Pakistan",
+    "copywriter Pakistan",
+    "SaaS content writer",
+    "technology content writer",
+    "fitness content writer",
+    "healthcare content writer",
+    "professional content writer",
     "freelance content writer",
-    "copywriting portfolio",
-    "digital content writer",
   ],
-  authors: [{ name: "MUNEEBA KIRAN " }],
+  authors: [{ name: "Nimrah Shahzad" }],
   openGraph: {
-    title: "MUNEEBA KIRAN 's Portfolio | Professional Content Writing",
+    title: "Nimrah Shahzad | SEO Content Writer & Social Media Strategist",
     description:
-      "A selection of professional content writing projects including website copy, SEO content, scripts, social media campaigns, email marketing, and product content.",
+      "Explore selected SEO, website, SaaS, technology, healthcare, fitness, and brand content projects by Nimrah Shahzad.",
     type: "website",
     url: "https://storycup.vercel.app/portfolio",
     images: [
@@ -53,16 +52,16 @@ export const metadata: Metadata = {
         url: "/worldwideartical.jpg",
         width: 1200,
         height: 630,
-        alt: "MUNEEBA KIRAN  Content Writing Portfolio",
+        alt: "Nimrah Shahzad Portfolio",
       },
     ],
-    siteName: "MUNEEBA KIRAN  Portfolio",
+    siteName: "Nimrah Shahzad Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MUNEEBA KIRAN 's Portfolio | Content Writing",
+    title: "Nimrah Shahzad | Content Writing Portfolio",
     description:
-      "Explore professional content writing, SEO copywriting, scripts, campaigns, product content, and website copy.",
+      "Selected work in Semantic SEO, SEO content, website copywriting, social media, SaaS, technology, and brand content.",
     images: ["/worldwideartical.jpg"],
   },
   alternates: {
@@ -83,14 +82,14 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CreativeWork",
-      name: "MUNEEBA KIRAN 's Content Writing Portfolio",
+      name: "Nimrah Shahzad's Content Writing Portfolio",
       author: {
         "@type": "Person",
-        name: "MUNEEBA KIRAN ",
+        name: "Nimrah Shahzad",
       },
       url: "https://storycup.vercel.app/portfolio",
       description:
-        "Professional content writing portfolio featuring website copy, SEO copywriting, YouTube scripts, LinkedIn content, email campaigns, product descriptions, and press releases.",
+        "Professional portfolio featuring Semantic SEO, SEO content writing, website copywriting, social media strategy, SaaS content, technology writing, and brand content.",
     }),
   },
 }
@@ -98,300 +97,481 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
-    title: "Understanding Imposter Syndrome: What Your Mind Is Trying to Tell You",
+    title: "SEO Content & Website Copy for Home Medicare",
     description:
-      "A compassionate, science-backed explainer on anxiety responses that demystifies the fight-or-flight mechanism for general readers, with practical coping strategies woven throughout.",
+      "Created SEO-focused website content designed to improve search visibility, communicate healthcare services clearly, and guide visitors toward relevant solutions.",
     image:
-      "https://images.unsplash.com/photo-1573497019940-1cfe4dcfbc2d?auto=format&fit=crop&w=1200&q=80",
-    category: "Mental Health Blog",
+      "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1200&q=80",
+    category: "Healthcare & Fitness",
+    originalCategory: "Healthcare SEO",
     technologies: [
-      "Mental Health Writing",
-      "Clinical Accuracy",
-      "Empathetic Storytelling",
-      "Science Communication",
+      "SEO Content Writing",
+      "Website Copy",
+      "On-Page SEO",
+      "Search Intent",
     ],
-    liveUrl:
-      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
+    liveUrl: "https://homemedicare.pk/",
     featured: true,
   },
 
   {
     id: 2,
-    title: "Understanding Withdrawal Symptoms: What Is Happening Inside Your Body",
+    title: "Fitness & Wellness Content for Just Your Fitness",
     description:
-      "An SEO-optimised pillar article targeting high-volume wellness keywords. Structured for featured snippets with expert citations, internal linking, and a clear content hierarchy.",
+      "Produced engaging, SEO-focused fitness content covering health, workouts, and wellness topics while keeping the writing clear, useful, and search-friendly.",
     image:
-      "https://images.unsplash.com/photo-1559757175-5700dde9bd1c?auto=format&fit=crop&w=1200&q=80",
-    category: "SEO Article",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    category: "Healthcare & Fitness",
+    originalCategory: "Fitness Content",
     technologies: [
       "SEO Writing",
-      "Wellness Content",
+      "Fitness Content",
+      "Content Strategy",
       "Keyword Research",
-      "Pillar Content",
     ],
-    liveUrl:
-      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
+    liveUrl: "https://justyourfitness.com/",
     featured: true,
   },
 
   {
     id: 3,
-    title: "Brand Voice & Social Media Copy for a Wellness Startup",
+    title: "Crypto News & Content for Australian Crypto Convention",
     description:
-      "Developed a full content suite including Instagram captions, ad copy, and email sequences — maintaining a warm, professional tone aligned with the brand’s audience of young professionals.",
+      "Created SEO-driven crypto content and informative digital publications covering cryptocurrency, blockchain, and industry trends.",
     image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e11e67a7?auto=format&fit=crop&w=1200&q=80",
-    category: "Copywriting Campaign",
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology & Media",
+    originalCategory: "Crypto Content",
     technologies: [
-      "Copywriting",
-      "Social Media Copy",
-      "Brand Voice",
-      "Email Sequences",
+      "Crypto Writing",
+      "SEO Content",
+      "News Writing",
+      "Research",
     ],
-    liveUrl:
-      "https://docs.google.com/document/d/1Kg2ATKhtgqGSMAWTzPyed8hA6sCkvglY/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
+    liveUrl: "https://auscryptocon.com/news-aucryptocon/",
     featured: true,
   },
 
   {
     id: 4,
-    title: "Neurodevelopmental Parent Guides & FAQs",
+    title: "SEO Content for Super Asia Sanitary",
     description:
-      "Empathetic, accessible written resources for parents and caregivers of children with ADHD, Autism Spectrum Disorder, and other neurodevelopmental conditions — explaining complex diagnostic processes in plain, stigma-free language.",
+      "Created SEO-friendly blogs and product-focused content for a sanitary and home products brand, combining search intent with clear product communication.",
     image:
-      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=80",
-    category: "Psychoeducational Content",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+    category: "E-commerce",
+    originalCategory: "E-commerce & Product Content",
     technologies: [
-      "Parent Resources",
-      "Clinical Translation",
-      "ADHD & ASD Content",
-      "Accessible Writing",
+      "SEO Blogs",
+      "Product Descriptions",
+      "On-Page SEO",
+      "Content Strategy",
     ],
-    liveUrl:
-      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
-    featured: true,
+    liveUrl: "https://superasiasanitary.com/",
+    featured: false,
   },
 
   {
     id: 5,
-    title: "Mental Health & Behavioural Health Blog Series",
+    title: "Startup & SaaS Content for Reliable Startup",
     description:
-      "SEO-optimised blog articles, landing pages, and patient guides on mental health, psychology, and behavioural health written for digital health platforms serving international and UK audiences.",
+      "Developed niche-focused content for startup audiences across SaaS, fintech, business strategy, and emerging technology topics.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
-    category: "SEO Content Writing",
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+    category: "Business & SaaS",
+    originalCategory: "SaaS & Startup Content",
     technologies: [
-      "SEO Content",
-      "Mental Health Writing",
-      "Patient Guides",
-      "On-Page SEO",
+      "SaaS Writing",
+      "Fintech Content",
+      "SEO Strategy",
+      "Business Writing",
     ],
-    liveUrl:
-      "https://docs.google.com/document/d/1Kg2ATKhtgqGSMAWTzPyed8hA6sCkvglY/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
-    featured: false,
+    liveUrl: "https://reliablestartup.com/",
+    featured: true,
   },
 
   {
     id: 6,
-    title: "UK Healthcare & Neurodevelopmental Landing Pages",
+    title: "Semantic SEO Content for BrandClickX",
     description:
-      "Clear, clinically accurate, and stigma-free website content and FAQs focused on ADHD, Autism assessments, and family support — written in British English with UK healthcare terminology.",
+      "Created search-intent-driven content using semantic SEO strategies to strengthen topical relevance, improve organic visibility, and target valuable search queries.",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999f0?auto=format&fit=crop&w=1200&q=80",
-    category: "Website Content",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
+    originalCategory: "Semantic SEO",
     technologies: [
-      "UK Healthcare Writing",
-      "British English",
-      "Landing Pages",
-      "Clinical Accuracy",
+      "Semantic SEO",
+      "Search Intent",
+      "Keyword Research",
+      "SEO Content",
     ],
-    liveUrl:
-      "https://docs.google.com/document/d/1D2vuOiiOg5bgsufwXNs61sU68v907ZyK/edit?usp=drivesdk&ouid=110211900788976801549&rtpof=true&sd=true",
+    liveUrl: "https://brandclickx.com/",
+    featured: true,
+  },
+
+  {
+    id: 7,
+    title: "SEO & Website Content for Ultimate Pest Solutions",
+    description:
+      "Developed conversion-focused website content for a Canadian pest control business, combining SEO best practices with clear service messaging.",
+    image:
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+    category: "Website & Copywriting",
+    originalCategory: "Home Services SEO",
+    technologies: [
+      "Website Copy",
+      "Local SEO",
+      "Service Pages",
+      "Conversion Copy",
+    ],
+    liveUrl: "https://ultimatepestsolutions.ca/",
+    featured: false,
+  },
+
+  {
+    id: 8,
+    title: "SEO Content & Brand Writing for Avoura",
+    description:
+      "Authored SEO blogs and guest posts focused on increasing organic traffic, strengthening topical authority, and supporting long-term domain growth.",
+    image:
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
+    originalCategory: "SEO & Guest Posting",
+    technologies: [
+      "SEO Blogging",
+      "Guest Posting",
+      "Content Strategy",
+      "Organic Growth",
+    ],
+    liveUrl: "https://avoura.in/",
+    featured: false,
+  },
+
+  {
+    id: 9,
+    title: "SEO Content for Odix Technology",
+    description:
+      "Produced optimized technology content designed to communicate services clearly while improving search visibility through structured, keyword-focused writing.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology & Media",
+    originalCategory: "Technology Content",
+    technologies: [
+      "Tech Writing",
+      "SEO Content",
+      "Website Content",
+      "Keyword Strategy",
+    ],
+    liveUrl: "https://odixtech.com/",
+    featured: false,
+  },
+
+  {
+    id: 10,
+    title: "SEO News Content for Capslock",
+    description:
+      "Created SEO-optimized news and trending-topic articles using strategic keywords and search-focused content structures.",
+    image:
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology & Media",
+    originalCategory: "News & SEO Writing",
+    technologies: [
+      "News Writing",
+      "SEO",
+      "Trending Topics",
+      "Keyword Research",
+    ],
+    liveUrl: "https://capslock.pk/",
+    featured: false,
+  },
+
+  {
+    id: 11,
+    title: "Content Strategy for LEAP Saudi Arabia",
+    description:
+      "Researched and developed clear, compelling content around a major technology event, focusing on audience relevance and effective communication.",
+    image:
+      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
+    category: "Business & SaaS",
+    originalCategory: "Event Content",
+    technologies: [
+      "Content Research",
+      "Event Content",
+      "Copywriting",
+      "Content Strategy",
+    ],
+    liveUrl: "https://onegiantleap.com/",
+    featured: true,
+  },
+
+  {
+    id: 12,
+    title: "SEO Content for InHeritageX",
+    description:
+      "Managed SEO blogging and WordPress content while supporting online visibility through strategic content planning and social media-focused ideas.",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
+    originalCategory: "SEO & WordPress",
+    technologies: [
+      "SEO Blogging",
+      "WordPress",
+      "Content Planning",
+      "Social Media Strategy",
+    ],
+    liveUrl: "https://inheritagex.com/",
+    featured: false,
+  },
+
+  {
+    id: 13,
+    title: "Web Content for Exolux Services",
+    description:
+      "Created engaging and SEO-focused website content supporting brand communication, service positioning, and a stronger online presence.",
+    image:
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+    category: "Website & Copywriting",
+    originalCategory: "Website Content",
+    technologies: [
+      "Web Copywriting",
+      "SEO Writing",
+      "Brand Messaging",
+      "Content Strategy",
+    ],
+    liveUrl: "https://exoluxservices.com/",
+    featured: false,
+  },
+
+  {
+    id: 14,
+    title: "SEO Content for COMET Estimation",
+    description:
+      "Created SEO-driven content around construction estimating and business services, focusing on useful information, search visibility, and audience intent.",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    category: "Business & SaaS",
+    originalCategory: "Construction SEO",
+    technologies: [
+      "SEO Content",
+      "Construction Writing",
+      "Search Intent",
+      "Website Content",
+    ],
+    liveUrl: "https://cometestimating.com/",
+    featured: false,
+  },
+
+  {
+    id: 15,
+    title: "Outsourcing & SEO Content for Go-Globes",
+    description:
+      "Developed search-focused B2B content around outsourced SEO services, communicating digital marketing concepts through clear and structured copy.",
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
+    originalCategory: "Digital Marketing Content",
+    technologies: [
+      "SEO Writing",
+      "Digital Marketing",
+      "B2B Content",
+      "Search Intent",
+    ],
+    liveUrl: "https://go-globes.com/outsource-seo-services/",
     featured: false,
   },
 ]
-export default function PortfolioPage() {
-  const categories = [
-    "All",
-    "Website Content",
-    "Scripts",
-    "Social Media",
-    "E-Commerce",
-    "Email Marketing",
-    "Press Releases",
-    "Real Estate",
-    "Documentation",
-  ]
 
+const categories = [
+  "All",
+  "SEO & Content Strategy",
+  "Website & Copywriting",
+  "Business & SaaS",
+  "Healthcare & Fitness",
+  "Technology & Media",
+  "E-commerce",
+]
+
+export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
 
-      <div className="container mx-auto px-4 py-12">
+      <main>
+        {/* Hero */}
+        <section className="container mx-auto px-4 pt-12 sm:pt-16 lg:pt-20 pb-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-4">
+              Selected Work
+            </Badge>
 
-        {/* Hero Section */}
-        <section className="text-center mb-16">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-            My Portfolio
-          </h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-5">
+              My Portfolio
+            </h1>
 
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A selection of professional writing projects across website
-            content, SEO copywriting, scripts, personal branding,
-            marketing campaigns, product content, and technical writing.
-          </p>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              A selection of SEO content, website copy, brand strategy,
+              business content, technology writing, and industry-focused
+              projects created for brands across different markets.
+            </p>
+          </div>
         </section>
 
-        {/* Project Categories */}
-        <Tabs defaultValue="All" className="mb-12">
+        {/* Portfolio */}
+        <section className="container mx-auto px-4 py-10 sm:py-14 lg:py-16">
+          <Tabs defaultValue="All" className="w-full">
+            <div className="flex justify-center mb-10">
+              <TabsList className="h-auto flex flex-wrap justify-center gap-1 p-1 max-w-5xl">
+                {categories.map((category) => (
+                  <TabsTrigger
+                    key={category}
+                    value={category}
+                    className="px-4 py-2 text-sm"
+                  >
+                    {category}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
 
-          <TabsList className="flex flex-wrap h-auto gap-1 w-full max-w-5xl mx-auto justify-center">
-            {categories.map((category) => (
-              <TabsTrigger key={category} value={category}>
-                {category}
-              </TabsTrigger>
-            ))}
-          </TabsList>
+            {categories.map((category) => {
+              const filteredProjects =
+                category === "All"
+                  ? projects
+                  : projects.filter(
+                      (project) => project.category === category
+                    )
 
-          {categories.map((category) => (
-            <TabsContent key={category} value={category}>
+              return (
+                <TabsContent
+                  key={category}
+                  value={category}
+                  className="mt-0"
+                >
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    {filteredProjects.map((project) => (
+                      <Card
+                        key={project.id}
+                        className="group overflow-hidden border-border/60 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                      >
+                        {/* Image */}
+                        <div className="relative h-52 overflow-hidden">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-                {projects
-                  .filter(
-                    (project) =>
-                      category === "All" ||
-                      project.category === category
-                  )
-                  .map((project) => (
-
-                    <Card
-                      key={project.id}
-                      className="overflow-hidden hover:shadow-lg transition-shadow"
-                    >
-
-                      {/* Project Image */}
-                      <div className="relative h-48">
-
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-
-                        {project.featured && (
-                          <Badge className="absolute top-4 left-4">
-                            Featured
-                          </Badge>
-                        )}
-
-                      </div>
-
-                      <CardHeader>
-
-                        <div className="flex items-center justify-between">
-                          <Badge variant="secondary">
-                            {project.category}
-                          </Badge>
-                        </div>
-
-                        <CardTitle className="text-xl">
-                          {project.title}
-                        </CardTitle>
-
-                      </CardHeader>
-
-                      <CardContent>
-
-                        <p className="text-muted-foreground mb-4">
-                          {project.description}
-                        </p>
-
-                        <div className="flex flex-wrap gap-2 mb-4">
-
-                          {project.technologies.map((tech) => (
-                            <Badge
-                              key={tech}
-                              variant="outline"
-                              className="text-xs"
-                            >
-                              {tech}
+                          {project.featured && (
+                            <Badge className="absolute top-4 left-4">
+                              Featured
                             </Badge>
-                          ))}
+                          )}
 
+                          <Badge
+                            variant="secondary"
+                            className="absolute bottom-4 left-4 backdrop-blur-sm"
+                          >
+                            {project.originalCategory}
+                          </Badge>
                         </div>
 
-                        <div className="flex gap-2">
+                        {/* Content */}
+                        <CardHeader className="pb-3">
+                          <CardTitle className="text-xl leading-snug group-hover:text-primary transition-colors">
+                            {project.title}
+                          </CardTitle>
+                        </CardHeader>
 
-                          <Button size="sm" asChild>
+                        <CardContent>
+                          <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                            {project.description}
+                          </p>
+
+                          <div className="flex flex-wrap gap-2 mb-6">
+                            {project.technologies.map((technology) => (
+                              <Badge
+                                key={technology}
+                                variant="outline"
+                                className="text-xs font-normal"
+                              >
+                                {technology}
+                              </Badge>
+                            ))}
+                          </div>
+
+                          <Button
+                            size="sm"
+                            className="w-full sm:w-auto"
+                            asChild
+                          >
                             <a
                               href={project.liveUrl}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <ExternalLink className="mr-2 h-3 w-3" />
-                              View Work
+                              View Published Work
+                              <ExternalLink className="ml-2 h-3.5 w-3.5" />
                             </a>
                           </Button>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
 
-                        </div>
+                  {filteredProjects.length === 0 && (
+                    <div className="text-center py-16">
+                      <p className="text-muted-foreground">
+                        No projects available in this category yet.
+                      </p>
+                    </div>
+                  )}
+                </TabsContent>
+              )
+            })}
+          </Tabs>
+        </section>
 
-                      </CardContent>
+        {/* CTA */}
+        <section className="container mx-auto px-4 py-16 lg:py-20">
+          <Card className="max-w-4xl mx-auto overflow-hidden">
+            <CardContent className="p-8 sm:p-10 lg:p-12 text-center">
+              <Badge variant="secondary" className="mb-4">
+                Let's Work Together
+              </Badge>
 
-                    </Card>
-
-                  ))}
-
-              </div>
-
-            </TabsContent>
-          ))}
-
-        </Tabs>
-
-        {/* Call to Action */}
-        <section className="text-center py-16">
-
-          <Card className="max-w-2xl mx-auto">
-
-            <CardContent className="p-8">
-
-              <h2 className="text-2xl font-bold mb-4">
-                Have a Writing Project in Mind?
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+                Have a Content Project in Mind?
               </h2>
 
-              <p className="text-muted-foreground mb-6">
-                Whether you need website content, SEO copywriting,
-                scripts, marketing copy, or professional business
-                content, let's create something valuable together.
+              <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
+                Need SEO content, website copy, social media strategy,
+                business content, or a complete content strategy? Let's
+                create content that gives your brand a stronger digital
+                presence.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button size="lg" asChild>
                   <Link href="/contact">
                     Get In Touch
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
 
                 <Button size="lg" variant="outline" asChild>
                   <Link href="/services">
-                    View Services
+                    Explore Services
                   </Link>
                 </Button>
-
               </div>
-
             </CardContent>
-
           </Card>
-
         </section>
-
-      </div>
+      </main>
 
       <Footer />
     </div>

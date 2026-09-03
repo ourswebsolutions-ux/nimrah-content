@@ -1,409 +1,610 @@
+"use client"
+
 import Image from "next/image"
-import Link from "next/link"
+import { useMemo, useState } from "react"
+
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Calendar, Clock, Search, ArrowRight } from "lucide-react"
-import { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: "MUNEEBA KIRAN 's Blog | Content Writing, AI & SEO Insights",
-  description:
-    "Explore MUNEEBA KIRAN 's blog for practical insights on content writing, AI tools, paraphrasing, academic writing, copywriting, and SEO content.",
-  keywords: [
-    "MUNEEBA KIRAN  blog",
-    "content writing",
-    "content writing tips",
-    "SEO content writing",
-    "AI content writing",
-    "AI paraphrasing tools",
-    "academic writing",
-    "copywriting tips",
-    "blog writing",
-    "SEO copywriting",
-    "content writer Pakistan",
-    "freelance content writer",
-    "professional content writer",
-    "AI writing tools",
-    "content creation",
-  ],
-  authors: [{ name: "MUNEEBA KIRAN " }],
-  openGraph: {
-    title: "MUNEEBA KIRAN 's Blog | Content Writing, AI & SEO Insights",
-    description:
-      "Read MUNEEBA KIRAN 's latest articles covering content writing, AI-powered writing tools, academic writing, paraphrasing, and copywriting.",
-    type: "website",
-    url: "https://storycup.vercel.app/blog",
-    images: [
-      {
-        url: "/blog-og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "MUNEEBA KIRAN  Blog - Content Writing and AI Insights",
-      },
-    ],
-    siteName: "MUNEEBA KIRAN  Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "MUNEEBA KIRAN 's Blog | Content Writing & SEO Insights",
-    description:
-      "Discover practical content writing, AI writing, SEO, paraphrasing, and copywriting insights from MUNEEBA KIRAN .",
-    images: ["/biography.webp"],
-  },
-  alternates: {
-    canonical: "https://storycup.vercel.app/blog",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-}
+import {
+  Calendar,
+  Clock,
+  Search,
+  ArrowRight,
+  X,
+} from "lucide-react"
 
 const blogPosts = [
   {
     id: 1,
-    title: "The Art of Not Thinking",
+    title: "SEO Content & Website Copy for Home Medicare",
     excerpt:
-      "An engaging and reflective article exploring overthinking, mindfulness, and the importance of creating mental space in everyday life.",
+      "Created SEO-focused website content designed to improve search visibility, communicate healthcare services clearly, and guide visitors toward relevant solutions.",
     image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-    category: "Lifestyle & Personal Growth",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+    category: "Healthcare & Fitness",
     date: "2024-04-10",
     readTime: "6 min read",
-    liveUrl:
-      "https://medium.com/@onecup.oftea/the-art-of-not-thinking-c345efd4fa5c",
+    liveUrl: "https://homemedicare.pk/",
     featured: true,
   },
-
   {
     id: 2,
-    title: "5 Daily Habits for Language Fluency",
+    title: "Fitness & Wellness Content for Just Your Fitness",
     excerpt:
-      "Discover five practical daily habits that can help language learners improve fluency, build consistency, expand vocabulary, and communicate with greater confidence.",
+      "Produced engaging, SEO-focused fitness content covering health, workouts, and wellness topics while keeping the writing clear, useful, and search-friendly.",
     image:
-      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
-    category: "Educational Writing",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    category: "Healthcare & Fitness",
     date: "2024-04-05",
     readTime: "7 min read",
-    liveUrl:
-      "https://medium.com/no-time/want-to-speak-any-language-fluently-start-these-5-daily-habits-cd2cec7e9d1f",
+    liveUrl: "https://justyourfitness.com/",
     featured: true,
   },
-
   {
     id: 3,
-    title: "I Woke Up at 4:30 AM for 30 Days",
+    title: "Crypto News & Content for Australian Crypto Convention",
     excerpt:
-      "A personal-development article exploring the reality of waking up at 4:30 AM for 30 consecutive days, including challenges, experiences, and lessons learned.",
+      "Created SEO-driven crypto content and informative digital publications covering cryptocurrency, blockchain, and industry trends.",
     image:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
-    category: "Lifestyle Writing",
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology & Media",
     date: "2024-03-28",
     readTime: "8 min read",
-    liveUrl:
-      "https://medium.com/@reshmadudhat29/i-woke-up-at-4-30-am-for-30-days-the-truth-nobody-tells-you-b704f0f86c3b",
+    liveUrl: "https://auscryptocon.com/news-aucryptocon/",
     featured: true,
   },
-
   {
     id: 4,
-    title: "Faith, Love & Identity in Adulthood",
+    title: "SEO Content for Super Asia Sanitary",
     excerpt:
-      "An honest and thoughtful piece discussing faith, relationships, identity, and personal growth through the different experiences of adulthood.",
+      "Created SEO-friendly blogs and product-focused content for a sanitary and home products brand, combining search intent with clear product communication.",
     image:
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-    category: "Feature Writing",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+    category: "E-commerce",
     date: "2024-03-20",
-    readTime: "8 min read",
-    liveUrl:
-      "https://educationbeing.com/talking-about-the-hard-things-faith-love-and-identity-in-adulthood-honest-review/",
+    readTime: "6 min read",
+    liveUrl: "https://superasiasanitary.com/",
     featured: false,
   },
-
   {
     id: 5,
-    title: "Replacement Diplomas & College Degrees",
+    title: "Startup & SaaS Content for Reliable Startup",
     excerpt:
-      "An informational article covering replacement diplomas and college degrees, presented in a clear, structured, and reader-friendly format.",
+      "Developed niche-focused content for startup audiences across SaaS, fintech, business strategy, and emerging technology topics.",
     image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-    category: "Informational Content",
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+    category: "Business & SaaS",
     date: "2024-03-15",
     readTime: "7 min read",
-    liveUrl:
-      "https://educationbeing.com/buy-fast-and-realistic-looking-replacement-diplomas-and-college-degrees/",
-    featured: false,
+    liveUrl: "https://reliablestartup.com/",
+    featured: true,
   },
-
   {
     id: 6,
-    title: "AI Tools for Better Content Creation",
+    title: "Semantic SEO Content for BrandClickX",
     excerpt:
-      "Explore how modern AI tools can support writers during research, drafting, editing, and content refinement while maintaining quality and originality.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    category: "AI & Content",
-    date: "2024-03-10",
-    readTime: "6 min read",
-    liveUrl:
-      "https://www.jornaldobairroalto.com.br/",
-    featured: false,
-  },
-
-  {
-    id: 7,
-    title: "Effective SEO Content for Better Online Visibility",
-    excerpt:
-      "A practical look at creating relevant, useful, and search-friendly content that helps websites communicate their value while improving organic visibility.",
+      "Created search-intent-driven content using semantic SEO strategies to strengthen topical relevance, improve organic visibility, and target valuable search queries.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-    category: "SEO & Content Writing",
-    date: "2024-03-05",
+    category: "SEO & Content Strategy",
+    date: "2024-03-10",
     readTime: "7 min read",
-    liveUrl:
-      "https://jornaldobairroalto.com.br/",
+    liveUrl: "https://brandclickx.com/",
+    featured: true,
+  },
+  {
+    id: 7,
+    title: "SEO & Website Content for Ultimate Pest Solutions",
+    excerpt:
+      "Developed conversion-focused website content for a Canadian pest control business, combining SEO best practices with clear service messaging.",
+    image:
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+    category: "Website & Copywriting",
+    date: "2024-03-05",
+    readTime: "6 min read",
+    liveUrl: "https://ultimatepestsolutions.ca/",
     featured: false,
   },
-
   {
     id: 8,
-    title: "Building Quality Content Through Research & Strategy",
+    title: "SEO Content & Brand Writing for Avoura",
     excerpt:
-      "Discover how research, audience understanding, content planning, and SEO principles work together to create valuable and engaging online content.",
+      "Authored SEO blogs and guest posts focused on increasing organic traffic, strengthening topical authority, and supporting long-term domain growth.",
     image:
-      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
-    category: "Content Strategy",
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
     date: "2024-02-28",
     readTime: "6 min read",
-    liveUrl:
-      "https://www.bankingsupport.info/",
+    liveUrl: "https://avoura.in/",
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "SEO Content for Odix Technology",
+    excerpt:
+      "Produced optimized technology content designed to communicate services clearly while improving search visibility through structured, keyword-focused writing.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology & Media",
+    date: "2024-02-20",
+    readTime: "6 min read",
+    liveUrl: "https://odixtech.com/",
+    featured: false,
+  },
+  {
+    id: 10,
+    title: "SEO News Content for Capslock",
+    excerpt:
+      "Created SEO-optimized news and trending-topic articles using strategic keywords and search-focused content structures.",
+    image:
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology & Media",
+    date: "2024-02-15",
+    readTime: "6 min read",
+    liveUrl: "https://capslock.pk/",
+    featured: false,
+  },
+  {
+    id: 11,
+    title: "Content Strategy for LEAP Saudi Arabia",
+    excerpt:
+      "Researched and developed clear, compelling content around a major technology event, focusing on audience relevance and effective communication.",
+    image:
+      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
+    category: "Business & SaaS",
+    date: "2024-02-10",
+    readTime: "7 min read",
+    liveUrl: "https://onegiantleap.com/",
+    featured: true,
+  },
+  {
+    id: 12,
+    title: "SEO Content for InHeritageX",
+    excerpt:
+      "Managed SEO blogging and WordPress content while supporting online visibility through strategic content planning and social media-focused ideas.",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
+    date: "2024-02-05",
+    readTime: "6 min read",
+    liveUrl: "https://inheritagex.com/",
+    featured: false,
+  },
+  {
+    id: 13,
+    title: "Web Content for Exolux Services",
+    excerpt:
+      "Created engaging and SEO-focused website content supporting brand communication, service positioning, and a stronger online presence.",
+    image:
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+    category: "Website & Copywriting",
+    date: "2024-01-30",
+    readTime: "6 min read",
+    liveUrl: "https://exoluxservices.com/",
+    featured: false,
+  },
+  {
+    id: 14,
+    title: "SEO Content for COMET Estimation",
+    excerpt:
+      "Created SEO-driven content around construction estimating and business services, focusing on useful information, search visibility, and audience intent.",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    category: "Business & SaaS",
+    date: "2024-01-25",
+    readTime: "7 min read",
+    liveUrl: "https://cometestimating.com/",
+    featured: false,
+  },
+  {
+    id: 15,
+    title: "Outsourcing & SEO Content for Go-Globes",
+    excerpt:
+      "Developed search-focused B2B content around outsourced SEO services, communicating digital marketing concepts through clear and structured copy.",
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+    category: "SEO & Content Strategy",
+    date: "2024-01-20",
+    readTime: "7 min read",
+    liveUrl: "https://go-globes.com/outsource-seo-services/",
     featured: false,
   },
 ]
 
 const categories = [
   "All",
-  "AI & Education",
-  "Academic Writing",
-  "Content Writing",
-  "AI & Content",
-  "AI Writing",
-  "Copywriting",
+  "Healthcare & Fitness",
+  "Technology & Media",
+  "E-commerce",
+  "Business & SaaS",
+  "SEO & Content Strategy",
+  "Website & Copywriting",
 ]
 
 export default function BlogPage() {
-  const featuredPosts = blogPosts.filter((post) => post.featured)
-  const recentPosts = blogPosts.filter((post) => !post.featured)
+  const [activeCategory, setActiveCategory] = useState("All")
+  const [searchQuery, setSearchQuery] = useState("")
+
+  const filteredPosts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase()
+
+    return blogPosts.filter((post) => {
+      const matchesCategory =
+        activeCategory === "All" || post.category === activeCategory
+
+      const matchesSearch =
+        !query ||
+        post.title.toLowerCase().includes(query) ||
+        post.excerpt.toLowerCase().includes(query) ||
+        post.category.toLowerCase().includes(query)
+
+      return matchesCategory && matchesSearch
+    })
+  }, [activeCategory, searchQuery])
+
+  const featuredPosts = filteredPosts.filter((post) => post.featured)
+  const recentPosts = filteredPosts.filter((post) => !post.featured)
+
+  const clearFilters = () => {
+    setActiveCategory("All")
+    setSearchQuery("")
+  }
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
 
-      <div className="container mx-auto px-4 py-12">
-        {/* Hero Section */}
-        <section className="text-center mb-16">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-            Writing Insights & Tips
-          </h1>
+      <main>
+        {/* Hero */}
+        <section className="container mx-auto px-4 pt-12 pb-10 sm:pt-16 sm:pb-14 lg:pt-20">
+          <div className="mx-auto max-w-4xl text-center">
+            <Badge variant="secondary" className="mb-4">
+              Content Writing Portfolio
+            </Badge>
 
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore MUNEEBA KIRAN 's writing insights, AI content strategies,
-            academic writing tips, copywriting techniques, and practical ideas
-            for creating better content.
-          </p>
-        </section>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              Writing Insights &{" "}
+              <span className="text-primary">Content Work</span>
+            </h1>
 
-        {/* Search and Categories */}
-        <section className="mb-12">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-8">
-            <div className="relative w-full md:w-96">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-
-              <Input
-                placeholder="Search articles..."
-                className="pl-10"
-              />
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
-                <Button
-                  key={category}
-                  variant="outline"
-                  size="sm"
-                  className="hover:bg-primary hover:text-blue-foreground"
-                >
-                  {category}
-                </Button>
-              ))}
-            </div>
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground sm:text-xl">
+              Explore selected SEO content, website copy, technology articles,
+              business content, healthcare writing, product content, and
+              content strategy projects.
+            </p>
           </div>
         </section>
 
-        {/* Featured Posts */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">
-            Featured Articles
-          </h2>
+        {/* Search + Categories */}
+        <section className="container mx-auto px-4 pb-12">
+          <div className="rounded-2xl border bg-card p-4 shadow-sm sm:p-6">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+              {/* Search */}
+              <div className="relative w-full lg:max-w-md">
+                <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {featuredPosts.map((post) => (
-              <Card
-                key={post.id}
-                className="overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="relative h-48">
-                  <Image
-                    src={post.image || "/placeholder.svg"}
-                    alt={post.title}
-                    fill
-                    className="object-cover"
-                  />
+                <Input
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search articles, niches, or services..."
+                  className="h-11 pl-10 pr-10"
+                />
 
-                  <Badge className="absolute top-4 left-4">
-                    Featured
-                  </Badge>
-                </div>
-
-                <CardHeader>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-2">
-                    <Badge variant="secondary">
-                      {post.category}
-                    </Badge>
-
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      {new Date(post.date).toLocaleDateString()}
-                    </div>
-
-                    <div className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {post.readTime}
-                    </div>
-                  </div>
-
-                  <CardTitle className="text-xl hover:text-blue transition-colors">
-                    <a
-                      href={post.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {post.title}
-                    </a>
-                  </CardTitle>
-                </CardHeader>
-
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    {post.excerpt}
-                  </p>
-
-                  <Button
-                    variant="ghost"
-                    className="p-0 h-auto"
-                    asChild
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-foreground"
+                    aria-label="Clear search"
                   >
-                    <a
-                      href={post.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <X className="h-4 w-4" />
+                  </button>
+                )}
+              </div>
+
+              {/* Category Tabs */}
+              <div className="flex w-full gap-2 overflow-x-auto pb-1 lg:w-auto lg:flex-wrap lg:justify-end">
+                {categories.map((category) => {
+                  const active = activeCategory === category
+
+                  return (
+                    <Button
+                      key={category}
+                      type="button"
+                      size="sm"
+                      variant={active ? "default" : "outline"}
+                      onClick={() => setActiveCategory(category)}
+                      className="shrink-0 whitespace-nowrap"
                     >
-                      Read More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+                      {category}
+                    </Button>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* Active filters */}
+            {(activeCategory !== "All" || searchQuery) && (
+              <div className="mt-5 flex flex-wrap items-center gap-2 border-t pt-4">
+                <span className="text-sm text-muted-foreground">
+                  Showing:
+                </span>
+
+                {activeCategory !== "All" && (
+                  <Badge variant="secondary">{activeCategory}</Badge>
+                )}
+
+                {searchQuery && (
+                  <Badge variant="secondary">
+                    Search: &quot;{searchQuery}&quot;
+                  </Badge>
+                )}
+
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  onClick={clearFilters}
+                  className="ml-1"
+                >
+                  Clear filters
+                </Button>
+              </div>
+            )}
           </div>
         </section>
 
-        {/* Recent Posts */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">
-            Recent Articles
-          </h2>
+        {/* Results */}
+        {filteredPosts.length === 0 ? (
+          <section className="container mx-auto px-4 pb-20">
+            <div className="rounded-2xl border border-dashed p-12 text-center">
+              <Search className="mx-auto mb-4 h-10 w-10 text-muted-foreground" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {recentPosts.map((post) => (
-              <Card
-                key={post.id}
-                className="overflow-hidden hover:shadow-lg transition-shadow"
+              <h2 className="text-2xl font-semibold">
+                No articles found
+              </h2>
+
+              <p className="mt-2 text-muted-foreground">
+                Try another search term or select a different category.
+              </p>
+
+              <Button
+                type="button"
+                onClick={clearFilters}
+                className="mt-5"
               >
-                <div className="relative h-48">
-                  <Image
-                    src={post.image || "/placeholder.svg"}
-                    alt={post.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                View All Articles
+              </Button>
+            </div>
+          </section>
+        ) : (
+          <>
+            {/* Featured */}
+            {featuredPosts.length > 0 && (
+              <section className="container mx-auto px-4 pb-16">
+                <div className="mb-8 flex items-end justify-between gap-4">
+                  <div>
+                    <p className="mb-2 text-sm font-medium text-primary">
+                      SELECTED WORK
+                    </p>
 
-                <CardHeader>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-2">
-                    <Badge variant="secondary">
-                      {post.category}
-                    </Badge>
-
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      {new Date(post.date).toLocaleDateString()}
-                    </div>
+                    <h2 className="text-3xl font-bold tracking-tight">
+                      Featured Articles
+                    </h2>
                   </div>
 
-                  <CardTitle className="text-lg hover:text-blue transition-colors">
-                    <a
-                      href={post.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {post.title}
-                    </a>
-                  </CardTitle>
-                </CardHeader>
+                  <span className="hidden text-sm text-muted-foreground sm:block">
+                    {featuredPosts.length} featured{" "}
+                    {featuredPosts.length === 1 ? "article" : "articles"}
+                  </span>
+                </div>
 
-                <CardContent>
-                  <p className="text-muted-foreground mb-4 text-sm">
-                    {post.excerpt}
-                  </p>
-
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {post.readTime}
-                    </span>
-
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      asChild
+                <div className="grid gap-8 lg:grid-cols-2">
+                  {featuredPosts.map((post) => (
+                    <Card
+                      key={post.id}
+                      className="group overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                     >
                       <a
                         href={post.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`Read ${post.title}`}
                       >
-                        Read More
+                        <div className="relative h-56 overflow-hidden sm:h-64">
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            unoptimized
+                          />
+
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+                          <Badge className="absolute left-4 top-4">
+                            Featured
+                          </Badge>
+                        </div>
                       </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      </div>
+
+                      <CardHeader>
+                        <div className="mb-2 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                          <Badge variant="secondary">
+                            {post.category}
+                          </Badge>
+
+                          <div className="flex items-center gap-1">
+                            <Calendar className="h-3.5 w-3.5" />
+                            {new Date(post.date).toLocaleDateString(
+                              "en-US",
+                              {
+                                month: "short",
+                                day: "numeric",
+                                year: "numeric",
+                              }
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-1">
+                            <Clock className="h-3.5 w-3.5" />
+                            {post.readTime}
+                          </div>
+                        </div>
+
+                        <CardTitle className="text-xl leading-snug transition-colors group-hover:text-primary sm:text-2xl">
+                          <a
+                            href={post.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {post.title}
+                          </a>
+                        </CardTitle>
+                      </CardHeader>
+
+                      <CardContent>
+                        <p className="mb-5 leading-7 text-muted-foreground">
+                          {post.excerpt}
+                        </p>
+
+                        <Button
+                          variant="ghost"
+                          className="group/btn h-auto p-0"
+                          asChild
+                        >
+                          <a
+                            href={post.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Read Article
+                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                          </a>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Recent */}
+            {recentPosts.length > 0 && (
+              <section className="container mx-auto px-4 pb-20">
+                <div className="mb-8">
+                  <p className="mb-2 text-sm font-medium text-primary">
+                    MORE PROJECTS
+                  </p>
+
+                  <h2 className="text-3xl font-bold tracking-tight">
+                    Recent Articles
+                  </h2>
+                </div>
+
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  {recentPosts.map((post) => (
+                    <Card
+                      key={post.id}
+                      className="group overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                    >
+                      <a
+                        href={post.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Read ${post.title}`}
+                      >
+                        <div className="relative h-48 overflow-hidden">
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            unoptimized
+                          />
+
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                        </div>
+                      </a>
+
+                      <CardHeader>
+                        <div className="mb-2 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
+                          <Badge variant="secondary">
+                            {post.category}
+                          </Badge>
+
+                          <div className="flex items-center gap-1">
+                            <Calendar className="h-3 w-3" />
+                            {new Date(post.date).toLocaleDateString(
+                              "en-US",
+                              {
+                                month: "short",
+                                day: "numeric",
+                                year: "numeric",
+                              }
+                            )}
+                          </div>
+                        </div>
+
+                        <CardTitle className="text-lg leading-snug transition-colors group-hover:text-primary">
+                          <a
+                            href={post.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {post.title}
+                          </a>
+                        </CardTitle>
+                      </CardHeader>
+
+                      <CardContent>
+                        <p className="mb-5 line-clamp-3 text-sm leading-6 text-muted-foreground">
+                          {post.excerpt}
+                        </p>
+
+                        <div className="flex items-center justify-between">
+                          <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                            <Clock className="h-3.5 w-3.5" />
+                            {post.readTime}
+                          </span>
+
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="group/btn"
+                            asChild
+                          >
+                            <a
+                              href={post.liveUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Read More
+                              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                            </a>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </section>
+            )}
+          </>
+        )}
+      </main>
 
       <Footer />
     </div>

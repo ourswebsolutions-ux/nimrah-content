@@ -33,7 +33,7 @@ export function Header() {
 <Link href="/" className="flex items-center shrink-0">
   <img
     src="/logo.png"
-    alt="MUNEEBA KIRAN   Logo"
+    alt="NIMRAH SHAHZAD   Logo"
     className="
       h-24 w-24
       sm:h-26 sm:w-26
@@ -68,7 +68,7 @@ export function Header() {
             <ThemeToggle />
 
             {/* ✅ Review Toggle Button */}
-            <ReviewToggleButton />
+            {/* <ReviewToggleButton /> */}
 
             {/* Mobile Navigation Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>

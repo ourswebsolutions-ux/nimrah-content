@@ -18,12 +18,12 @@ import { Footer } from "@/components/footer";
 
 export default function HomePage() {
   const handleDownloadResume = async () => {
-  const response = await fetch('/muneeba-resume.pdf')
+  const response = await fetch('/nimra-resume.pdf')
   const blob = await response.blob();
 
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.setAttribute('download', 'muneeba-resume.pdf');                       
+  link.setAttribute('download', 'nimra-resume.pdf');                       
   link.style.display = 'none';
   document.body.appendChild(link);
   link.click(); // 👈 triggers instant download
@@ -46,7 +46,7 @@ export default function HomePage() {
                   Available for freelance writing projects
                 </Badge>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight break-words">
-                  Hi, I'm <span className="text-blue-600">MUNEEBA KIRAN  </span>
+                  Hi, I'm <span className="text-blue-600">NIMRAH SHAHZAD  </span>
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
                   Creative Content Writer & Copywriter
@@ -77,23 +77,45 @@ export default function HomePage() {
                 </Button>
               </div>
 
-              <div className="flex gap-4">
-                <Button size="icon" variant="ghost" asChild>
-                  <Link href="https://Youtube.com" target="_blank">
-                    <Youtube className="h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button size="icon" variant="ghost" asChild>
-                  <Link href="https://www.linkedin.com/in/alina-rajput-552a9a405" target="_blank">
-                    <Linkedin className="h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button size="icon" variant="ghost" asChild>
-                  <Link href="mailto: muneeba_kiran126@hotmail.com  ">
-                    <Mail className="h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
+             <div className="flex gap-4">
+  <Button size="icon" variant="ghost" asChild>
+    <Link
+      href="https://www.linkedin.com/in/nimrah-shahzad"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Linkedin className="h-5 w-5" />
+    </Link>
+  </Button>
+
+  <Button size="icon" variant="ghost" asChild>
+    <Link
+      href="https://www.upwork.com/freelancers/~0134bf4077991b2bfb"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Upwork"
+    >
+      <span className="text-xs font-bold">Up</span>
+    </Link>
+  </Button>
+
+  <Button size="icon" variant="ghost" asChild>
+    <Link
+      href="https://www.fiverr.com/s/aexqPe8"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fiverr"
+    >
+      <span className="text-xs font-bold">Fi</span>
+    </Link>
+  </Button>
+
+  <Button size="icon" variant="ghost" asChild>
+    <Link href="mailto:nimrashahzad234@gmail.com">
+      <Mail className="h-5 w-5" />
+    </Link>
+  </Button>
+</div>
             </div>
 
             <div className="relative mt-4 lg:mt-0">
@@ -174,56 +196,62 @@ export default function HomePage() {
 
       {/* Skills Preview */}
       <section className="py-12 sm:py-16 lg:py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-              Skills & Expertise
-            </h2>
-            <p className="text-base sm:text-lg text-muted-foreground">
-              Tools and skills I use to deliver impactful writing
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-8 sm:mb-12">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+        Skills & Expertise
+      </h2>
+
+      <p className="text-base sm:text-lg text-muted-foreground">
+        Skills and expertise I use to build brands, grow visibility, and create
+        high-performing content
+      </p>
+    </div>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto">
+      {[
+        "SEO Content Writing",
+        "On-Page SEO",
+        "Copywriting",
+        "Website Management",
+        "Social Media Strategy",
+        "Project Management",
+        "Content Strategy",
+        "Social Media Community Management",
+        "LinkedIn Management",
+        "Semantic SEO",
+        "Brand Strategy",
+        "Content Planning",
+      ].map((skill) => (
+        <Card
+          key={skill}
+          className="p-3 sm:p-4 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+        >
+          <CardContent className="p-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 bg-primary/10 rounded-lg flex items-center justify-center">
+              <span className="text-primary font-bold text-base sm:text-lg">
+                {skill.charAt(0)}
+              </span>
+            </div>
+
+            <p className="font-medium text-xs sm:text-sm leading-tight break-words">
+              {skill}
             </p>
-          </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
-            {[
-              "SEO",
-              "Copywriting",
-              "Content Strategy",
-              "Blog Writing",
-              "Editing",
-              "Storytelling",
-              "Email Marketing",
-              "Social Media",
-              "WordPress",
-              "Notion",
-              "Google Docs",
-              "Grammarly",
-            ].map((skill) => (
-              <Card
-                key={skill}
-                className="p-3 sm:p-4 text-center hover:shadow-lg transition-shadow"
-              >
-                <CardContent className="p-0">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-blue font-bold text-base sm:text-lg">
-                      {skill.charAt(0)}
-                    </span>
-                  </div>
-                  <p className="font-medium text-xs sm:text-sm leading-tight break-words">{skill}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-8 sm:mt-12">
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/about">
-                Learn More About Me <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+    <div className="text-center mt-8 sm:mt-12">
+      <Button variant="outline" size="lg" asChild>
+        <Link href="/about">
+          Learn More About Me
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </Button>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>

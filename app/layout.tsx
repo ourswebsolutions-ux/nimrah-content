@@ -11,10 +11,10 @@ import FloatingWhatsApp from "@/components/floating-whatsapp"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MUNEEBA KIRAN   - Expert Content Writer & SEO Copywriter",
+  title: "NIMRAH SHAHZAD   - Expert Content Writer & SEO Copywriter",
 
   description:
-    "DiscoverMUNEEBA KIRAN  's professional content writing portfolio. Expert in SEO content, blog writing, and copywriting to boost engagement and rankings.",
+    "DiscoverNIMRAH SHAHZAD  's professional content writing portfolio. Expert in SEO content, blog writing, and copywriting to boost engagement and rankings.",
 
   keywords: [
     "content writer",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "copywriting",
     "content strategy",
     "freelance writer",
-    "MUNEEBA KIRAN   portfolio",
+    "NIMRAH SHAHZAD   portfolio",
     "storycup",
   ],
 
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
 
-  authors: [{ name: "MUNEEBA KIRAN  " }],
+  authors: [{ name: "NIMRAH SHAHZAD  " }],
 
   openGraph: {
-    title: "MUNEEBA KIRAN   - Expert Content Writer & Copywriter",
+    title: "NIMRAH SHAHZAD   - Expert Content Writer & Copywriter",
     description:
-      "ExploreMUNEEBA KIRAN  's portfolio of engaging blog posts, SEO content, and persuasive copywriting for businesses and brands.",
+      "ExploreNIMRAH SHAHZAD  's portfolio of engaging blog posts, SEO content, and persuasive copywriting for businesses and brands.",
     type: "website",
     url: "https://storycup.vercel.app/",
     images: [
@@ -46,17 +46,17 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "MUNEEBA KIRAN   Content Writing Portfolio",
+        alt: "NIMRAH SHAHZAD   Content Writing Portfolio",
       },
     ],
-    siteName: "MUNEEBA KIRAN   Portfolio",
+    siteName: "NIMRAH SHAHZAD   Portfolio",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "MUNEEBA KIRAN   - Expert Content Writer & Copywriter",
+    title: "NIMRAH SHAHZAD   - Expert Content Writer & Copywriter",
     description:
-      "ExploreMUNEEBA KIRAN  's portfolio of engaging blog posts, SEO content, and persuasive copywriting.",
+      "ExploreNIMRAH SHAHZAD  's portfolio of engaging blog posts, SEO content, and persuasive copywriting.",
     images: ["/logo.png"],
   },
 
