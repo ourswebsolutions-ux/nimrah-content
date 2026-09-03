@@ -109,7 +109,7 @@ const experiences = [
     company: "Nytrikx",
     role: "LinkedIn Strategist",
     location: "United Kingdom",
-    date: "May 2026 – Present",
+    date: "May 2026 ",
     description:
       "Managing LinkedIn profiles, developing content strategies, supporting lead generation, and driving organic brand growth through consistent and strategic LinkedIn activity.",
     tags: [
@@ -125,7 +125,7 @@ const experiences = [
     company: "MMA Technical",
     role: "LinkedIn Management",
     location: "United Kingdom",
-    date: "April 2026 – Present",
+    date: "April 2026 ",
     description:
       "Managing the company's LinkedIn presence, creating engaging content, maintaining consistent posting, and supporting audience growth and brand visibility.",
     tags: [
@@ -597,7 +597,7 @@ export default function AboutPage() {
             <Card className="text-center">
               <CardContent className="p-6">
                 <p className="text-3xl font-bold text-primary">
-                  20+
+                  120+
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
                   Brands & Projects
@@ -608,7 +608,7 @@ export default function AboutPage() {
             <Card className="text-center">
               <CardContent className="p-6">
                 <p className="text-3xl font-bold text-primary">
-                  8+
+                  18+
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
                   Countries Served
